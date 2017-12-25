@@ -1,0 +1,1661 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="description" content="24h News - Broadcast News TV Channel & News Magazine Template"> 
+        <meta name="author" content="Via-Theme"> 
+        <!-- Mobile Metas -->         
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <!-- Site Title  -->         
+        <title>Главная | Kishkenekol Tany</title>         
+        <!-- Favicon -->         
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" /> 
+        <!-- Энергетик Прикаспия-->         
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed%7CRoboto+Slab:300,400,700%7CRoboto:300,400,500,700" rel="stylesheet"> 
+        <!-- Stylesheets -->         
+        <link rel="stylesheet" href="css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="css/main.css"> 
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/colors.css"> 
+        <link rel="stylesheet" href="css/responsive.css"> 
+        <link rel="stylesheet" href="css/jquery-ui.min.css"> 
+        <link rel="stylesheet" href="css/weather-icons.min.css"> 
+        <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    </head>     
+    <body> 
+        <div id="pageloader"> 
+            <div class="loader-item"> 
+                <img src="img/load.gif" alt='loader' /> 
+            </div>             
+        </div>         
+        <!--========== BEGIN #WRAPPER ==========-->         
+        <div id="wrapper" data-color="blue"> 
+            <!--========== BEGIN #HEADER ==========-->             
+            <header id="header"> 
+                <!-- Begin .top-menu -->                 
+                <div class="top-menu" wp-site-content> 
+                    <!-- Begin .container -->                     
+                    <div class="container"> 
+                        <!-- Begin .left-top-menu -->                         
+                        <ul class="left-top-menu"> 
+                            <li> 
+                                <a href="index.html#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            </li>                             
+                            <li> 
+                                <a href="index.html#" class="twitter"><i class="fa fa-twitter"></i></a> 
+                            </li>                             
+                            <li> 
+                                <a href="index.html#" class="youtube"> <i class="fa fa-youtube"></i></a> 
+                            </li>                             
+                            <li> 
+                                <a href="index.html#" class="google-plus"><i class="fa fa-google-plus"></i></a> 
+                            </li>                             
+                            <li> 
+                                <a href="index.html#" class="linkedin"><i class="fa fa-linkedin"></i></a> 
+                            </li>                             
+                            <li> 
+                                <a href="index.html#" class="instagram"> <i class="fa fa-instagram"></i></a> 
+                            </li>                             
+                            <li class="address">
+                                <a href="index.html#"><i class="fa fa-phone"></i> +7 (777) 123 4567</a>
+                            </li>                             
+                            <li class="address">
+                                <a href="index.html#"><i class="fa fa-envelope-o"></i> kishkenekol-tany@press.kz</a>
+                            </li>                             
+                        </ul>                         
+                        <!-- End .left-top-menu -->                         
+                        <!-- Begin .right-top-menu -->                         
+                        <ul class="right-top-menu pull-right"> 
+                            <li id="cancelRedactor" style="display:none;">
+                                <a onclick="cancelRedactor()">Сохранить</a>
+                            </li>                                                         
+                            <li id="colorsRedactor" style="display:none;" class="dropdown"> 
+                                <a class="dropdown-toggle" data-toggle="dropdown">Цвета</a> 
+                                <ul class="dropdown-menu" style="background-color: black;"> 
+                                    <li>
+                                        <a onclick="changeColor('red')" style="background-color: #d4000e;color: white;"></a>
+                                    </li>                                         
+                                    <li>
+                                        <a onclick="changeColor('blue')" style="background-color: #40a9ff;color: white;"></a>
+                                    </li>                                         
+                                    <li>
+                                        <a onclick="changeColor('dark-blue')" style="background-color: #00469a;color: white;"></a>
+                                    </li>                                         
+                                    <li>
+                                        <a onclick="changeColor('green')" style="background-color: #4cb050;color: white;"></a>
+                                    </li>                                         
+                                    <li>
+                                        <a onclick="changeColor('purple')" style="background-color: #6441a5;color: white;"></a>
+                                    </li> 
+                                    <li>
+                                        <a onclick="changeColor('orange')" style="background-color: #ff9800;color: white;"></a>
+                                    </li> 
+                                    <li>
+                                        <a onclick="changeColor('deep-orange')" style="background-color: #ff4011;color: white;"></a>
+                                    </li>     
+                                    <li>
+                                        <a onclick="changeColor('turquoise')" style="background-color: #39c9bb;color: white;"></a>
+                                    </li> 
+                                    <li>
+                                        <a onclick="changeColor('pink')" style="background-color: #ea0253;color: white;"></a>
+                                    </li>      
+                                    <li>
+                                        <a onclick="changeColor('slate')" style="background-color: #64666c;color: white;"></a>
+                                    </li>                               
+                                </ul>                                     
+                            </li> 
+                            <li id="typeRedactor" style="display:none;" class="dropdown"> 
+                                <a class="dropdown-toggle" data-toggle="dropdown">Тип</a> 
+                                <ul class="dropdown-menu" style="background-color: black;"> 
+                                    <li>
+                                        <a onclick="changeType('1')">Тип 1</a>
+                                    </li>                                         
+                                    <li>
+                                        <a onclick="changeType('2')">Тип 2</a>
+                                    </li>                                                                      
+                                </ul>                                     
+                            </li> 
+                            <li id="redactor">
+                                <a onclick="redactor()">Редактор</a>
+                            </li> 
+
+                            <li class="contact">
+                                <a href=""><i class="fa fa-map-marker fa-i"></i></a>
+                            </li>                             
+                            <li class="about">
+                                <a href=""><i class="fa fa-user fa-i"></i></a> 
+                            </li>                             
+                            <li> 
+                                <div class="search-container"> 
+                                    <div class="search-icon-btn"> 
+                                        <span style="cursor:pointer"><i class="fa fa-search"></i></span> 
+                                    </div>                                     
+                                    <div class="search-input"> 
+                                        <input type="search" class="search-bar" placeholder="Поиск..." title="Search" /> 
+                                    </div>                                     
+                                </div>                                 
+                            </li>                             
+                        </ul>                         
+                        <!-- End .right-top-menu -->                         
+                    </div>                     
+                    <!-- End .container -->                     
+                </div>                 
+                <!-- End .top-menu -->                 
+                <!-- Begin .container -->                 
+                <div id="header_drag" class="container"> 
+                    <!-- Begin .header-logo -->                     
+                    <div id="draggable1" class="header-logo">
+                        <input class="inputFiles" type='file' onchange="changeImgFile(this, 57, 46, 'drag1img');" />
+                        <a href="">
+                            <!--<img id="drag1img" src="img/logo.png" alt="Site Logo" /> -->
+                            <h1>Kishkenekol Tany</h1> 
+                            <h4></h4> 
+                        </a>
+                    </div>                     
+                    <!-- End .header-logo -->                     
+                    <!-- Begin .header-add-place -->                     
+                    <div id="draggable2" class="header-add-place">
+                        <input class="inputFiles" type='file' onchange="changeImgFile(this, 728, 90, 'drag2img');" />
+                        <div class="desktop-add">
+                            <a href="" target="_blank">
+                                <img id="drag2img" src="img/banner_728x90.jpg" alt="">
+                            </a>
+                        </div>                         
+                    </div>                     
+                    <!-- End .header-add-place -->                     
+                    <!--========== BEGIN .NAVBAR #MOBILE-NAV ==========-->                     
+                    <nav class="navbar navbar-default" id="mobile-nav"> 
+                        <div class="navbar-header"> 
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" id="sidenav-toggle"> 
+                                <span class="icon-bar"></span> 
+                                <span class="icon-bar"></span> 
+                                <span class="icon-bar"></span> 
+                            </button>                             
+                            <div class="sidenav-header-logo">
+                                <a href="">
+                                    <img src="img/logo.png" alt="Site Logo" /> 
+                                    <h2>Kishkenekol Tany</span></h2> 
+                                    <h5>Цифровизация печатных СМИ</h5> 
+                                </a>
+                            </div>                             
+                        </div>                         
+                        <div class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle"> 
+                            <button type="button" class="navbar-toggle active" data-toggle="collapse"> 
+                                <span class="icon-bar"></span> 
+                                <span class="icon-bar"></span> 
+                                <span class="icon-bar"></span> 
+                            </button>                             
+                            <div class="sidenav-brand"> 
+                                <div class="sidenav-header-logo">
+                                    <a href="">
+                                        <img src="img/logo.png" alt="Site Logo" /> 
+                                        <h2>Kishkenekol Tany</h2> 
+                                        <h5>Цифровизация печатных СМИ</h5> 
+                                    </a>
+                                </div>                                 
+                            </div>                             
+                            <ul class="sidenav-menu"> 
+                                <li>
+                                    <a href="" class="active">Главная</a> 
+                                    <div class="icon-sub-menu" data-sidenav-dropdown-toggle>
+                                        <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon></span>
+                                        <span class="sidenav-dropdown-icon up-icon" data-sidenav-dropdown-icon></span>
+                                    </div>                                     
+                                    <ul class="sidenav-dropdown" data-sidenav-dropdown> 
+                                        <li>
+                                            <a href="">Республиканские новости</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Главные новости</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Проишествия 24</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">QazContent TV</a>
+                                        </li>                                         
+                                    </ul>                                     
+                                </li>                                 
+                                <li>
+                                    <a href="">Аналитика</a> 
+                                    <div class="icon-sub-menu" data-sidenav-dropdown-toggle>
+                                        <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon></span>
+                                        <span class="sidenav-dropdown-icon up-icon" data-sidenav-dropdown-icon></span>
+                                    </div>                                     
+                                    <ul class="sidenav-dropdown" data-sidenav-dropdown> 
+                                        <li>
+                                            <a href="">Политика</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Экономика</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Аграрии</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Бизнес</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Банковский сектор</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Спорт</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Искуство</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Культура</a>
+                                        </li>                                         
+                                    </ul>                                     
+                                </li>                                 
+                                <li>
+                                    <a href="">Новости</a> 
+                                    <div class="icon-sub-menu" data-sidenav-dropdown-toggle>
+                                        <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon></span>
+                                        <span class="sidenav-dropdown-icon up-icon" data-sidenav-dropdown-icon></span>
+                                    </div>                                     
+                                    <ul class="sidenav-dropdown" data-sidenav-dropdown> 
+                                        <li>
+                                            <a href="">Политика</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Экономика</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Наука</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Образ жизни</a>
+                                        </li>                                         
+                                    </ul>                                     
+                                </li>                                 
+                                <li>
+                                    <a href="">Спорт</a> 
+                                    <div class="icon-sub-menu" data-sidenav-dropdown-toggle>
+                                        <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon></span>
+                                        <span class="sidenav-dropdown-icon up-icon" data-sidenav-dropdown-icon></span>
+                                    </div>                                     
+                                    <ul class="sidenav-dropdown" data-sidenav-dropdown> 
+                                        <li>
+                                            <a href="">Бокс</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Футбол</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Тенис</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Тяжелая атлетика</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Другие виды</a>
+                                        </li>                                         
+                                    </ul>                                     
+                                </li>                                 
+                                <li>
+                                    <a href="">Здоровье</a> 
+                                    <div class="icon-sub-menu" data-sidenav-dropdown-toggle>
+                                        <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon></span>
+                                        <span class="sidenav-dropdown-icon up-icon" data-sidenav-dropdown-icon></span>
+                                    </div>                                     
+                                    <ul class="sidenav-dropdown" data-sidenav-dropdown> 
+                                        <li>
+                                            <a href="">Домашнее здоровье</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Мужское здоровье</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Женское здоровье</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Детское здоровье</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Альтернативная медицина</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Фитнес и здоровье</a>
+                                        </li>                                         
+                                    </ul>                                     
+                                </li>                                 
+                                <li>
+                                    <a href="">Путишествие</a> 
+                                    <div class="icon-sub-menu" data-sidenav-dropdown-toggle>
+                                        <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon></span>
+                                        <span class="sidenav-dropdown-icon up-icon" data-sidenav-dropdown-icon></span>
+                                    </div>                                     
+                                    <ul class="sidenav-dropdown" data-sidenav-dropdown> 
+                                        <li>
+                                            <a href="">Достопримечательности</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Виды путишествий</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Национальные заповедники</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Отели</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">FoodБлог</a>
+                                        </li>                                         
+                                    </ul>                                     
+                                </li>                                 
+                                <li>
+                                    <a href="">Культура и развлечение</a> 
+                                    <div class="icon-sub-menu" data-sidenav-dropdown-toggle>
+                                        <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon></span>
+                                        <span class="sidenav-dropdown-icon up-icon" data-sidenav-dropdown-icon></span>
+                                    </div>                                     
+                                    <ul class="sidenav-dropdown" data-sidenav-dropdown> 
+                                        <li>
+                                            <a href="">Музыка & Опера</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Живопись & дизайн</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Театр & танцы </a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Знаменитости & Кино</a>
+                                        </li>                                         
+                                    </ul>                                     
+                                </li>                                 
+                                <li>
+                                    <a href="">КазКонтентТВ</a>
+                                </li>                                 
+                                <li>
+                                    <a href="index.html#">Еще</a> 
+                                    <div class="icon-sub-menu" data-sidenav-dropdown-toggle>
+                                        <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon></span>
+                                        <span class="sidenav-dropdown-icon up-icon" data-sidenav-dropdown-icon></span>
+                                    </div>                                     
+                                    <ul class="sidenav-dropdown" data-sidenav-dropdown> 
+                                        <li>
+                                            <a href="">Скоро...</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Автомобили</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Сделки</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Мы и окружение</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Про нас...</a>
+                                        </li>                                         
+                                    </ul>                                     
+                                </li>                                 
+                                <li>
+                                    <a href="index.html#">Контакты</a> 
+                                    <div class="icon-sub-menu" data-sidenav-dropdown-toggle>
+                                        <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon></span>
+                                        <span class="sidenav-dropdown-icon up-icon" data-sidenav-dropdown-icon></span>
+                                    </div>                                     
+                                    <ul class="sidenav-dropdown" data-sidenav-dropdown> 
+                                        <li>
+                                            <a href="">ГлавРед</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Региональные</a>
+                                        </li>                                         
+                                    </ul>                                     
+                                </li>                                 
+                            </ul>                             
+                        </div>                         
+                    </nav>                     
+                    <!--========== END .NAVBAR #MOBILE-NAV ==========-->                     
+                </div>                 
+                <!-- End .container -->                 
+                <!--========== BEGIN .NAVBAR #FIXED-NAVBAR ==========-->                 
+                <div class="navbar" id="fixed-navbar"> 
+                    <!--========== BEGIN MAIN-MENU .NAVBAR-COLLAPSE COLLAPSE #FIXED-NAVBAR-TOOGLE ==========-->                     
+                    <div class="main-menu nav navbar-collapse collapse" id="fixed-navbar-toggle"> 
+                        <!--========== BEGIN .CONTAINER ==========-->                         
+                        <div class="container"> 
+                            <!-- Begin .nav navbar-nav -->                             
+                            <ul class="nav navbar-nav"> 
+                                <li class="active">
+                                    <a href="index.html">Главная</a>
+                                </li>                                 
+                                <li>
+                                    <a href="novosti.html">Новости</a> 
+                                </li>                                 
+                                <li>
+                                    <a href="">Аналитика</a> 
+                                </li>                                 
+                                <li>
+                                    <a href="">Спорт</a>
+                                </li>                                 
+                                <li>
+                                    <a href="">Здоровье</a>
+                                </li>                                 
+                                <li>
+                                    <a href="">Путишествия</a>
+                                </li>                                 
+                                <li>
+                                    <a href="">Культура</a>
+                                </li>                                 
+                                <li>
+                                    <a href="">КазКонтентТВ</a>
+                                </li>                                 
+                                <!--========== BEGIN .DROPDOWN ==========-->                                 
+                                <li class="dropdown"> 
+                                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Еще</a> 
+                                    <ul class="dropdown-menu"> 
+                                        <li>
+                                            <a href="">Скоро...</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Автомобили</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Сделки</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Мы и окружение</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Про нас...</a>
+                                        </li>                                         
+                                    </ul>                                     
+                                </li>                                 
+                                <!-- <li class="dropdown"> 
+                                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Pages</a> 
+                                    <ul class="dropdown-menu"> 
+                                        <li>
+                                            <a href="">Single Post</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Error 404 Page</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Shortcodes</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Video</a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Video Full Width</a>
+                                        </li>                                         
+                                    </ul>                                     
+                                </li>     -->                             
+                                <li class="dropdown"> 
+                                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Контакты</a> 
+                                    <ul class="dropdown-menu"> 
+                                        <li> 
+                                            <a href="">Главная редакция</a> 
+                                        </li>                                         
+                                        <li>
+                                            <a href="">Региональные СМИ</a>
+                                        </li>                                         
+                                    </ul>                                     
+                                </li>                                 
+                                <!--========== END .DROPDOWN ==========-->                                 
+                                <!--========== BEGIN DROPDOWN MEGA-DROPDOWN ==========-->                                 
+                                <li class="dropdown mega-dropdown"> 
+                                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Навигатор</a> 
+                                    <ul class="dropdown-menu mega-dropdown-menu"> 
+                                        <!-- Begin col-sm-4-->                                         
+                                        <li class="col-sm-4"> 
+                                            <h3 class="title">Kishkenekol Tany в картинках</h3> 
+                                            <!-- Begin carousel-1-->                                             
+                                            <div id="carousel-1" class="nav-slider carousel slide slide-carousel" data-ride="carousel"> 
+                                                <!-- Begin carousel-indicators-->                                                 
+                                                <ol class="carousel-indicators"> 
+                                                    <li data-target="#carousel-1" data-slide-to="0" class="active"></li>                                                     
+                                                    <li data-target="#carousel-1" data-slide-to="1"></li>                                                     
+                                                    <li data-target="#carousel-1" data-slide-to="2"></li>                                                     
+                                                </ol>                                                 
+                                                <!-- End carousel-indicators-->                                                 
+                                                <!-- Begin carousel-inner-->                                                 
+                                                <div class="carousel-inner"> 
+                                                    <div class="item active"> 
+                                                        <a href="index.html#">
+                                                            <img src="img/menu_slide-image01.jpg" alt="">
+                                                        </a>                                                         
+                                                    </div>                                                     
+                                                    <div class="item"> 
+                                                        <img src="img/menu_slide-image02.jpg" alt=""> 
+                                                    </div>                                                     
+                                                    <div class="item"> 
+                                                        <img src="img/menu_slide-image03.jpg" alt=""> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <!-- End carousel-inner-->                                                 
+                                                <a class="left carousel-control" href="index.html#carousel-1" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Предыдущее</span> </a> 
+                                                <a class="right carousel-control" href="index.html#carousel-1" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Следующее</span> </a> 
+                                            </div>                                             
+                                            <!-- End carousel-1-->                                             
+                                        </li>                                         
+                                        <!-- End col-sm-4 -->                                         
+                                        <!-- Begin col-sm-4 -->                                         
+                                        <li class="col-sm-4"> 
+                                            <h3 class="title">Твоя область</h3> 
+                                            <ul class="media-list"> 
+                                                <li class="media"> 
+                                                    <a class="pull-right" href="">
+                                                        <img class="img-responsive" alt="" src="img/menu_small-image01.jpg">
+                                                    </a>                                                     
+                                                    <div class="media-body"> 
+                                                        <p> <a href="" target="_blank"><span class="bg-1">Новости</span></a><a href="">На заправках Алматы каждый день увеличивается колличество недовольных автолюбителей...</a></p> 
+                                                    </div>                                                     
+                                                </li>                                                 
+                                                <li class="media"> 
+                                                    <a class="pull-right" href="">
+                                                        <img src="img/menu_small-image02.jpg" alt="" class="img-image media-object">
+                                                    </a>                                                     
+                                                    <div class="media-body"> 
+                                                        <p> <a href="" target="_blank"><span class="bg-4">Спорт</span></a><a href="">ФК Шахтер</a></p> 
+                                                    </div>                                                     
+                                                </li>                                                 
+                                                <li class="media"> 
+                                                    <a class="pull-right" href="">
+                                                        <img src="img/menu_small-image03.jpg" alt="" class="img-image media-object">
+                                                    </a>                                                     
+                                                    <div class="media-body"> 
+                                                        <p><a href="" target="_blank"><span class="bg-2">Здоровье</span></a><a href="">районной больнице аксу аюлы......</a></p> 
+                                                    </div>                                                     
+                                                </li>                                                 
+                                                <li class="media"> 
+                                                    <a class="pull-right" href="">
+                                                        <img src="img/menu_small-image04.jpg" alt="" class="img-image media-object">
+                                                    </a>                                                     
+                                                    <div class="media-body"> 
+                                                        <p><a href="" target="_blank"><span class="bg-9">Жизнь и мы</span></a><a href="">Ученные выявили положительные моменты воздействия смартфонов на нашу жизнь...</a></p> 
+                                                    </div>                                                     
+                                                </li>                                                 
+                                            </ul>                                             
+                                        </li>                                         
+                                        <!-- End col-sm-4 -->                                         
+                                        <!-- Begin col-sm-4 -->                                         
+                                        <li class="col-sm-4"> 
+                                            <h3 class="title">Народный корреспондент</h3> 
+                                            <div class="video-container"> 
+                                                <iframe src="https://player.vimeo.com/video/100192146?title=0&byline=0&portrait=0" class="video" title="Advertisement"></iframe>                                                 
+                                            </div>                                             
+                                        </li>                                         
+                                        <!-- End col-sm-4 -->                                         
+                                        <!-- Begin col-sm-8 -->                                         
+                                        <li class="col-sm-8"> 
+                                            <h3 class="title">Про Нас</h3> 
+                                            <p><a href="" target="_blank"><strong>Kishkenekol Tany<strong> единственный общественно политический портал в Казахстане который придерживается и защищает свободу слова.</a></p> 
+                                        </li>                                         
+                                        <!-- End col-sm-8 -->                                         
+                                        <!-- Begin col-sm-4 -->                                         
+                                        <li class="col-sm-4"> 
+                                            <h3 class="title">Мы в СоцСетях</h3> 
+                                            <div class="menu-social-icons"> 
+                                                <ul> 
+                                                    <li> 
+                                                        <a href="index.html#" class="facebook"><i class="fa fa-facebook"></i></a> 
+                                                    </li>                                                     
+                                                    <li> 
+                                                        <a href="index.html#" class="youtube"><i class="fa fa-youtube"></i></a> 
+                                                    </li>                                                     
+                                                    <li> 
+                                                        <a href="index.html#" class="twitter"><i class="fa fa-twitter"></i></a> 
+                                                    </li>                                                     
+                                                    <li> 
+                                                        <a href="index.html#" class="linkedin"><i class="fa fa-linkedin"></i></a> 
+                                                    </li>                                                     
+                                                    <li> 
+                                                        <a href="index.html#" class="pinterest"><i class="fa fa-pinterest"></i></a> 
+                                                    </li>                                                     
+                                                    <li> 
+                                                        <a href="index.html#" class="google-plus"><i class="fa fa-google-plus"></i></a> 
+                                                    </li>                                                     
+                                                    <li> 
+                                                        <a href="index.html#" class="rss"><i class="fa fa-rss"></i></a> 
+                                                    </li>                                                     
+                                                    <li> 
+                                                        <a href="index.html#" class="tumblr"><i class="fa fa-tumblr"></i></a> 
+                                                    </li>                                                     
+                                                </ul>                                                 
+                                            </div>                                             
+                                        </li>                                         
+                                        <!-- End col-sm-4 -->                                         
+                                    </ul>                                     
+                                </li>                                 
+                                <!--========== END DROPDOWN MEGA-DROPDOWN ==========-->                                 
+                            </ul>                             
+                            <!--========== END .NAV NAVBAR-NAV ==========-->                             
+                        </div>                         
+                        <!--========== END .CONTAINER ==========-->                         
+                    </div>                     
+                    <!--========== END MAIN-MENU .NAVBAR-COLLAPSE COLLAPSE #FIXED-NAVBAR-TOOGLE ==========-->                     
+                    <!--========== BEGIN .SECOND-MENU NAVBAR #NAV-BELOW-MAIN ==========-->                     
+                    <div class="second-menu navbar" id="nav-below-main"> 
+                        <!-- Begin .container -->                         
+                        <div class="container"> 
+                            <!-- Begin .collapse navbar-collapse -->                             
+                            <div class="collapse navbar-collapse nav-below-main"> 
+                                <!-- Begin .nav navbar-nav -->                                 
+                                <!-- <ul class="nav navbar-nav"> 
+                                    <li>
+                                        <a href="">Watch Live 24/7</a>
+                                    </li>                                     
+                                    <li>
+                                        <a href="">24 TV & Radio</a>
+                                    </li>                                     
+                                    <li>
+                                        <a href="">Энергетик Прикаспияa>
+                                    </li>                                     
+                                    <li>
+                                        <a href="">24 News Store</a>
+                                    </li>                                     
+                                </ul>   -->                               
+                                <!-- End .nav navbar-nav -->                                 
+                            </div>                             
+                            <!-- End .collapse navbar-collapse -->                             
+                            <!-- Begin .clock -->                             
+                            <div class="clock"> 
+                                <div id="time"></div>                                 
+                                <div id="date"></div>                                 
+                            </div>                             
+                            <!-- End .clock -->                             
+                        </div>                         
+                        <!-- End .container -->                         
+                    </div>                     
+                    <!--========== END .SECOND-MENU NAVBAR #NAV-BELOW-MAIN ==========-->                     
+                </div>                 
+            </header>             
+            <!--========== END #HEADER ==========-->             
+            <!--========== BEGIN #MAIN-SECTION ==========-->
+            <br>
+
+            
+            <section id="main-section"> 
+                <!-- ========== BEGIN PARALLAX ========== -->                                 
+                <div id="parallax-section" style="display:none;"> 
+                    <div class="image1 img-overlay1"> 
+                        <div class="container"> 
+                            <div class="caption text-center"> 
+                                <div class="color-white text-center weight-300 medium-caption">Свежие новости в цифровом формате</div>                                 
+                                <div class="color-white text-center weight-800 large-caption">Новости города Актобе теперь в онлайн</div>                                 
+                                <div class="color-white text-center weight-400 medium-caption">Читай газету на телефоне</div>                                 
+                             
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                
+                <!-- ========== END PARALLAX ========== -->               
+                <!--========== BEGIN .MODULE ==========-->                 
+                <section class="module" id="firstModule"> 
+                    <!--========== BEGIN .CONTAINER ==========-->                     
+                    <div class="container" id="firstContainer"> 
+                        <!--========== BEGIN .BREAKING-NEWS ==========-->                         
+                        <!-- Begin .outer -->                         
+                        <div id="draggable3" class="outer"> 
+                            <div class="breaking-ribbon"> 
+                                <h4>Последние новости</h4> 
+                            </div>                             
+                            <!-- Begin .newsticker -->                             
+                            <div class="newsticker"> 
+                                <ul> 
+                                    <li> 
+                                        <h4><span class="category">Новости:</span><a href="index.html#"> Срочное сообщение: В Атырауском НПЗ вышел из строя...</a></h4> 
+                                    </li>                                     
+                                    <li> 
+                                        <h4><span class="category">Путешествие:</span><a href="index.html#"> Инвесторы из ОАЭ вернулись к переговорам в Актау.</a></h4> 
+                                    </li>                                     
+                                    <li> 
+                                        <h4><span class="category">Политика:</span><a href="index.html#"> Виновен ли Бозумбаев за дефицит на рынке ГСМ.</a></h4> 
+                                    </li>                                     
+                                    <li> 
+                                        <h4><span class="category">Здоровье:</span><a href="index.html#"> Конина способствует росту гармона лени в организме.</a></h4> 
+                                    </li>                                     
+                                    <li> 
+                                        <h4><span class="category">МИР:</span><a href="index.html#"> Крым вернули Украине в обмен на отмену санкций и отмену добычи сланца в США.</a></h4> 
+                                    </li>                                     
+                                    <li> 
+                                        <h4><span class="category">Финансы:</span><a href="index.html#"> Назарбаев приказал Акишеву пересмотреть максимальную ГЭПСВ...</a></h4> 
+                                    </li>                                     
+                                </ul>                                 
+                                <div class="navi"> 
+                                    <button class="up">
+                                        <i class="fa fa-caret-left"></i>
+                                    </button>                                     
+                                    <button class="down">
+                                        <i class="fa fa-caret-right"></i>
+                                    </button>                                     
+                                </div>                                 
+                            </div>                             
+                            <!-- End .newsticker -->                             
+                        </div>                         
+                        <!-- End .outer -->                         
+                        <!--========== END .BREAKING-NEWS ==========--> 
+                          <div id="draggable4" class="module-title"> 
+                            <h3 class="title"> </h3> 
+                            <h3 class="subtitle">ТОП 16 новостей вашего региона</h3> 
+                        </div>                               
+                        <!--========== BEGIN #NEWS-SLIDER ==========-->    
+                        <div id="draggable5">
+                            <div id="news-slider" class="owl-carousel"> 
+                                <div class="news-slide"> 
+                                    <div class="news-slider-layer first"> 
+                                        <a href="" target="_blank"> 
+                                            <div class="content"> 
+                                                <span class="category-tag bg-1">Главное в вашем регионе</span> 
+                                                <p>Обмен опыта по зеленой энергии на EXPO-2017 в Астане</p> 
+                                            </div>                                         
+                                            <img src="img/index_slider-image01.jpg" alt=""> 
+                                        </a>                                     
+                                    </div>                                 
+                                    <div class="news-slider-layer second"> 
+                                        <a href="" target="_blank"> 
+                                            <div class="content"> 
+                                                <span class="category-tag bg-6">Политика</span> 
+                                                <p>Приватизация порта в Актау...</p> 
+                                            </div>                                         
+                                            <img src="img/index_slider-image02.jpg" alt=""> 
+                                        </a>                                     
+                                    </div>                                 
+                                    <div class="news-slider-layer third"> 
+                                        <a href="" target="_blank"> 
+                                            <div class="content"> 
+                                                <span class="category-tag bg-4">СПОРТ</span> 
+                                                <p>Tour de France Астана впереди</p> 
+                                            </div>                                         
+                                            <img src="img/index_slider-image03.jpg" alt=""> 
+                                        </a>                                     
+                                    </div>                                 
+                                    <div class="news-slider-layer fourth"> 
+                                        <a href="" target="_blank"> 
+                                            <div class="content"> 
+                                                <span class="category-tag bg-2">Путишествие</span> 
+                                                <p>Как проверить и купить ЖД билеты онлайн за Рубежом </p> 
+                                            </div>                                         
+                                            <img src="img/index_slider-image04.jpg" alt=""> 
+                                        </a>                                     
+                                    </div>                                 
+                                </div>                             
+                                <div class="news-slide"> 
+                                    <div class="news-slider-layer first"> 
+                                        <a href="" target="_blank"> 
+                                            <div class="content"> 
+                                                <span class="category-tag bg-1">Технологии</span> 
+                                                <p>Дж. Стоун: Я готов консультировать Казахстанские компании</p> 
+                                            </div>                                         
+                                            <img src="img/index_slider-image05.jpg" alt=""> 
+                                        </a>                                     
+                                    </div>                                 
+                                    <div class="news-slider-layer second"> 
+                                        <a href="" target="_blank"> 
+                                            <div class="content"> 
+                                                <span class="category-tag bg-6">Жизнь и мы</span> 
+                                                <p>Самые модные цвета лета 2018</p> 
+                                            </div>                                         
+                                            <img src="img/index_slider-image06.jpg" alt=""> 
+                                        </a>                                     
+                                    </div>                                 
+                                    <div class="news-slider-layer third"> 
+                                        <a href="" target="_blank"> 
+                                            <div class="content"> 
+                                                <span class="category-tag bg-4">Главное</span> 
+                                                <p>ООН: Мир молчит о Гаити после событий 2009 г.</p> 
+                                            </div>                                         
+                                            <img src="img/index_slider-image07.jpg" alt=""> 
+                                        </a>                                     
+                                    </div>                                 
+                                    <div class="news-slider-layer fourth"> 
+                                        <a href="" target="_blank"> 
+                                            <div class="content"> 
+                                                <span class="category-tag bg-2">Мы и окружение</span> 
+                                                <p>Полезный завтрак защищает нашу жинь от таксинов</p> 
+                                            </div>                                         
+                                            <img src="img/index_slider-image08.jpg" alt=""> 
+                                        </a>                                     
+                                    </div>                                 
+                                </div>                             
+                                <div class="news-slide"> 
+                                    <div class="news-slider-layer first"> 
+                                        <a href="" target="_blank"> 
+                                            <div class="content"> 
+                                                <span class="category-tag bg-1">Последние новости</span> 
+                                                <p>Беспорядки на улицах Каталонии после ввода войс Мадридом</p> 
+                                            </div>                                         
+                                            <img src="img/index_slider-image09.jpg" alt=""> 
+                                        </a>                                     
+                                    </div>                                 
+                                    <div class="news-slider-layer second"> 
+                                        <a href="" target="_blank"> 
+                                            <div class="content"> 
+                                                <span class="category-tag bg-6">Политика</span> 
+                                                <p>ЕС пляшет под дудку Меркель и Трампа</p> 
+                                            </div>                                         
+                                            <img src="img/index_slider-image10.jpg" alt=""> 
+                                        </a>                                     
+                                    </div>                                 
+                                    <div class="news-slider-layer third"> 
+                                        <a href="" target="_blank"> 
+                                            <div class="content"> 
+                                                <span class="category-tag bg-4">Спорт Футбол</span> 
+                                                <p>Барселона победила не смотря на запрет Мадрида</p> 
+                                            </div>                                         
+                                            <img src="img/index_slider-image11.jpg" alt=""> 
+                                        </a>                                     
+                                    </div>                                 
+                                    <div class="news-slider-layer fourth"> 
+                                        <a href="" target="_blank"> 
+                                            <div class="content"> 
+                                                <span class="category-tag bg-2">Здоровье</span> 
+                                                <p>Сколько будут стоить таблетки для пенсионеров после СМС</p> 
+                                            </div>                                         
+                                            <img src="img/index_slider-image12.jpg" alt=""> 
+                                        </a>                                     
+                                    </div>                                 
+                                </div>                             
+                            </div>  
+                        </div>                     
+                                                   
+                        <!--========== END .NEWS-SLIDER ==========-->                         
+                    </div>                     
+                </section>                 
+                <!--========== END .MODULE ==========-->                 
+                <!--========== BEGIN .MODULE ==========-->                 
+                <section id="secondModule" class="module highlight" wp-site-content wp-body-class wp-site-name wp-title wp-site-desc wp-header-image> 
+                    <div class="container"> 
+                        <div class="module-title"> 
+                            <h3 class="title"><span class="bg-1" style="background-color:#0023a0">ТОП</span></h3> 
+                            <h3 class="subtitle">Казахстан</h3> 
+                        </div>                         
+                        <!--========== BEGIN .ROW ==========-->
+
+                        <!-- Begin .bottom-add-place-->                         
+                        <div class="bottom-add-place"> 
+                            <a href="" target="_blank">
+                                <img src="img/Foto_topnews_1248x100.jpg" alt="">
+                            </a>                             
+                        </div>                         
+                        <!-- End .bottom-add-place -->
+
+                        <div class="row no-gutter"> 
+                            <!--========== BEGIN .COL-MD-6 ==========-->                             
+                            <div class="col-sm-6 col-md-6"> 
+                                <!--========== BEGIN .NEWS ==========-->                                 
+                                <div class="news"> 
+                                    <!-- Begin .item -->                                                                     
+                                </div>                                 
+                                <!--========== END .NEWS ==========-->                                 
+                            </div>                             
+                            <!--========== END .COL-MD-6 ==========-->                             
+                        </div>                         
+                    </div>                     
+                </section>                 
+                <!--========== END .MODULE ==========--> 
+                <section id="fourthModule" class="module highlight" style="display:none;"> 
+                    <div class="container"> 
+                        <div class="row no-gutter"> 
+                            <!--========== BEGIN .COL-MD-8 ==========-->                             
+                            <div class="col-md-8"> 
+                                <div class="module-title"> 
+                                    <h3 class="title"><span class="bg-1">Новости</span></h3> 
+                                    <h3 class="subtitle">Свежие новости г. Актобе</h3> 
+                                </div>                                 
+                                <!--========== BEGIN .ROW ==========-->                                 
+                                <div class="row no-gutter"> 
+                                    <!--========== BEGIN .COL-MD-3 ==========-->                                     
+                                    <div class="col-xs-12 col-sm-3 col-md-3"> 
+                                        <!-- Begin .list list-mark-1 -->                                         
+                                        <ul class="list list-mark-1"> 
+                                            <li>
+                                                <a href="index.html">Главная</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="watch-live.html">США</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="24-tv-radio.html">Трамп</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="Энергетик Прикаспия">Политика</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="24-news-store.html">Россия</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="tv-schedule.html">Назарбаев</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="news.html">Казахстан</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="politics.html">Криптовалюта</a> | 
+                                                <a href="business.html">Биткоин</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="tech-science.html">Бизнес</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="lifestyle.html">Наука</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="sport.html">Медицина</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="americanfootball.html">Футбол</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="soccer.html">ФК Актобе</a>
+                                            </li>                                             
+                                                 
+                                        </ul>                                         
+                                        <!-- End .list list-mark-1 -->                                         
+                                    </div>                                     
+                                    <!--========== END .COL-MD-3 ==========-->                                     
+                                    <!--========== BEGIN .COL-MD-9 ==========-->                                     
+                                    <div class="col-xs-12 col-sm-9 col-md-9"> 
+                                        <!--========== BEGIN .NEWS ==========-->                                         
+                                        <div class="news"> 
+                                            <div class="item"> 
+                                                <div class="item-image-3">
+                                                    <a class="img-link" href="#">
+                                                        <img class="img-responsive img-full" src="img/index_800x400-image09.jpg" alt="">
+                                                    </a>
+                                                    <span><a class="label-1" href="news.html">Срочные новости</a></span> 
+                                                </div>                                                 
+                                                <div class="item-content"> 
+                                                    <div class="title-left title-style04 underline04"> 
+                                                        <h3><a href="#"><strong>Рынок Шанхай горел в Астане</strong></a></h3> 
+                                                    </div>                                                     
+                                                    <p><a href="#" target="_blank" class="external-link"> Сгорели склады на местном рынке в Астане, пострадавших нет...</a></p> 
+                                                    <div> 
+                                                        <a href="watch-live.html" target="_blank"><span class="read-more"></span></a> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                            <div class="item"> 
+                                                <div class="item-image-3">
+                                                    <a class="img-link" href="#">
+                                                        <img class="img-responsive img-full" src="img/index_800x400-image10.jpg" alt="">
+                                                    </a>
+                                                    <span><a class="label-4" href="travel.html">Спорт</a></span> 
+                                                </div>                                                 
+                                                <div class="item-content"> 
+                                                    <div class="title-left title-style04 underline04"> 
+                                                        <h3><a href="#"><strong>ФК Астана</strong> в плей-офф</a></h3> 
+                                                    </div>                                                     
+                                                    <p><a href="#" target="_blank" class="external-link">Футбольный клуб Астана вышла в плей-офф стадию Лиги Европы...</a></p> 
+                                                    <div> 
+                                                        <a href="sport.html" target="_blank"><span class="read-more">Sport</span></a> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                            <div class="item"> 
+                                                <div class="item-image-3">
+                                                    <a class="img-link" href="#">
+                                                        <img class="img-responsive img-full" src="img/index_800x400-image11.jpg" alt="">
+                                                    </a>
+                                                    <span><a class="label-9" href="soccer.html"></a>Медицина</span> 
+                                                </div>                                                 
+                                                <div class="item-content"> 
+                                                    <div class="title-left title-style04 underline04"> 
+                                                        <h3><a href="#"><strong></strong> Влияние мобильных телефонов на здоровье</a></h3> 
+                                                    </div>                                                     
+                                                    <p><a href="#" target="_blank" class="external-link">Ученые Казахстана выявили старшные последствия чатстого использования мобильных телефонов перед сном</a></p> 
+                                                    <div> 
+                                                        <a href="lifestyle.html" target="_blank"><span class="read-more">Lifestyle</span></a> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                            <div class="item"> 
+                                                <div class="item-image-3">
+                                                    <a class="img-link" href="#">
+                                                        <img class="img-responsive img-full" src="img/index_800x400-image12.jpg" alt="">
+                                                    </a>
+                                                    <span><a class="label-3" href="health.html">Travel</a></span> 
+                                                </div>                                                 
+                                                <div class="item-content"> 
+                                                    <div class="title-left title-style04 underline04"> 
+                                                        <h3><a href="#"><strong>Browns</strong> Canyon</a></h3> 
+                                                    </div>                                                     
+                                                    <p><a href="#" target="_blank" class="external-link">To make a run at a national title, each element has to fall perfectly into place.</a></p> 
+                                                    <div> 
+                                                        <a href="travel.html" target="_blank"><span class="read-more">Travel</span></a> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                            <div class="item"> 
+                                                <div class="item-image-3">
+                                                    <a class="img-link" href="#">
+                                                        <img class="img-responsive img-full" src="img/index_800x400-image13.jpg" alt="">
+                                                    </a>
+                                                    <span><a class="label-6" href="health.html">Kishkenekol Tany</span> 
+                                                </div>                                                 
+                                                <div class="item-content"> 
+                                                    <div class="title-left title-style04 underline04"> 
+                                                        <h3><a href="#"><strong>The Энергетик Прикаспия> Shows</a></h3> 
+                                                    </div>                                                     
+                                                    <p><a href="#" target="_blank" class="external-link">Critical acclaim, star power and an increasing number of Энергетик Прикаспияuccess stories...</a></p> 
+                                                    <div> 
+                                                        <a href="Энергетик Прикаспияtml" target="_blank"><span class="read-more">Kishkenekol Tany</span></a> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <!-- End .content-->                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                        <!--========== END .NEWS ==========-->                                         
+                                    </div>                                     
+                                    <!--========== END .COL-MD-9 ==========-->                                     
+                                </div>                                 
+                                <!--========== END .ROW ==========-->                                 
+                            </div>                             
+                            <!--========== END .COL-MD-8 ==========-->                             
+                            <!--========== BEGIN COL-MD-4 ==========-->                             
+                            <div class="col-md-4"> 
+                                <!-- Begin .title-style02 -->                                 
+                                <div class="title-style02"> 
+                                    <h3><a href="#">Последние статьи</a></h3> 
+                                </div>                                 
+                                <!-- End .title-style02 -->                                 
+                                <!--========== BEGIN .SIDEBAR-SCROLL ==========-->                                 
+                                <div class="sidebar-scroll"> 
+                                    <!-- Begin .scroll-item -->                                     
+                                    <div class="item"> 
+                                        <div class="item-image-full">
+                                            <a class="img-link" href="#">
+                                                <img class="img-responsive img-full" src="img/index_800x400-image02.jpg" alt="">
+                                            </a>
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="item"> 
+                                        <div class="item-content-1"> 
+                                            <h3>В Кагарагде рабочие 5 шахт объявили забастовку, и уже 3 дня не выходят на поверхность</h3> 
+                                        </div>                                         
+                                    </div>                                     
+                                    <!-- End .scroll-item -->                                     
+                                    <div class="scroll-item"> 
+                                        <div class="item"> 
+                                            <div class="item-image">
+                                                <a class="img-link" href="#">
+                                                    <img class="img-responsive img-full" src="img/index_800x400-image40.jpg" alt="">
+                                                </a>
+                                            </div>                                             
+                                            <div class="item-content"> 
+                                                <p><i class="fa fa-clock-o"></i> <span class="day"> 1 мин назад</span> <br /> 
+                      Новое приложение придумали казахстанские студенты для глухонемых... </p> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="scroll-item"> 
+                                        <div class="item"> 
+                                            <div class="item-content-1"> 
+                                                <p><i class="fa fa-clock-o"></i> <span class="day"> 2 мин назад</span> <br /> 
+                      Новые законы приняли в Парламенте, теперь на пенсию жещнины выйдут раньше, в 55 лет. </p> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="scroll-item"> 
+                                        <div class="item"> 
+                                            <div class="item-content-1"> 
+                                                <p><a href="#"> <span class="day"> 3 min ago</span> <br /> 
+                      The M. players ran through a banner which read: “You don’t need to wear red & blue...</a></p> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="scroll-item"> 
+                                        <div class="item"> 
+                                            <div class="item-image">
+                                                <a class="img-link" href="#">
+                                                    <img class="img-responsive img-full" src="img/index_800x400-image41.jpg" alt="">
+                                                </a>
+                                            </div>                                             
+                                            <div class="item-content"> 
+                                                <p><a href="#"> <span class="day"> 4 min ago</span> <br /> 
+                      The flat brown spots show up on some parts of the skin...</a></p> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="scroll-item"> 
+                                        <div class="item"> 
+                                            <div class="item-image">
+                                                <a class="img-link" href="#">
+                                                    <img class="img-responsive img-full" src="img/index_800x400-image42.jpg" alt="">
+                                                </a>
+                                            </div>                                             
+                                            <div class="item-content"> 
+                                                <p><a href="#"> <span class="day">5 min ago</span> <br /> 
+                      The natural cycles alone aren’t sufficient to explain...</a></p> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="scroll-item"> 
+                                        <div class="item"> 
+                                            <div class="item-content-1"> 
+                                                <p><i class="fa fa-clock-o"></i> <span class="day"> 6 min ago</span> <br /> 
+                      L.Counsel is demanding stop its policy of censoring student religious speech. </p> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="scroll-item"> 
+                                        <div class="item"> 
+                                            <div class="item-content-1"> 
+                                                <p><i class="fa fa-clock-o"></i> <span class="day"> 7 min ago</span> <br /> 
+                      Often broadcast social media sites with popular hashtags but the social media has nothing to do.</p> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="scroll-item"> 
+                                        <div class="item"> 
+                                            <div class="item-content-1"> 
+                                                <p><i class="fa fa-clock-o"></i> <span class="day">8 min ago</span> <br /> 
+                      The River Seine is at its highest level for more than 30 years. </p> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="item"> 
+                                        <div class="item-image-full">
+                                            <a class="img-link" href="#">
+                                                <img class="img-responsive img-full" src="img/index_800x400-image04.jpg" alt="">
+                                            </a>
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="scroll-item"> 
+                                        <div class="item"> 
+                                            <div class="item-content-1"> 
+                                                <p><i class="fa fa-clock-o"></i> <span class="day"> 9 min ago</span> <br /> 
+                      Magazines are publications, that are printed or electronically published online magazines. </p> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="scroll-item"> 
+                                        <div class="item"> 
+                                            <div class="item-content-1"> 
+                                                <p><i class="fa fa-clock-o"></i> <span class="day"> 10 min ago</span> <br /> 
+                      First-time buyers are being warned they could pay more if they sign up for 40-year mortgages </p> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="scroll-item"> 
+                                        <div class="item"> 
+                                            <div class="item-content-1"> 
+                                                <p><i class="fa fa-clock-o"></i> <span class="day"> 11 min ago</span> <br /> 
+                      New research provides new evidence that natural cycles alone aren’t sufficient to explain the global atmospheric warming. </p> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <!-- End .scroll-item -->                                     
+                                </div>                                 
+                                <!--========== END .SIDEBAR-SCROLL ==========-->                                 
+                            </div>                             
+                            <!--========== END .COL-MD-4 ==========-->                             
+                        </div>                         
+                    </div>                     
+                </section>            
+                <!--========== BEGIN .MODULE ==========-->                 
+                <section class="module" id="thirdModule"> 
+                    <div class="container"> 
+                        <div class="row no-gutter"> 
+                            <!--========== BEGIN .COL-MD-8 ==========-->                             
+                            <div class="col-md-8"> 
+                                <!--========== BEGIN .NEWS ==========-->                                 
+                                <div class="news"> 
+                                    <div class="module-title"> 
+                                        <h3 class="title"><span class="bg-11">Регионы</span></h3> 
+                                        <h3 class="subtitle"></h3> 
+                                    </div>                                     
+                                    <!-- Begin .item-->                                     
+                                    <div class="item"> 
+                                        <div class="item-image-2">
+                                            <a class="img-link" href="index.html#">
+                                                <img class="img-responsive img-full" src="img/index_800x400-image05.jpg" alt="">
+                                            </a>
+                                            <span><a class="label-2" href="">Политика</a></span> 
+                                        </div>                                         
+                                        <div class="item-content"> 
+                                            <div class="title-left title-style04 underline04"> 
+                                                <h3><a href="index.html#"><strong>Лжепредпринимательство:</strong> поправки в закон</a></h3> 
+                                            </div>                                             
+                                            <p><a href="index.html#"> 33 человека освобождены из мест лишения свободы после принятия поправки по лжепредпринимательству</a></p> 
+                                            <p><a href="index.html#" target="_blank" class="external-link">Поправки в закон вызвали положительные отклики в обществе</a></p> 
+                                            <div> 
+                                                <a href="" target="_blank"><span class="read-more">Политика</span></a> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <!-- End .item-->                                     
+                                    <!-- Begin .item-->                                     
+                                    <div class="item"> 
+                                        <div class="item-image-2">
+                                            <a class="img-link" href="index.html#">
+                                                <img class="img-responsive img-full" src="img/index_800x400-image06.jpg" alt="">
+                                            </a>
+                                            <span><a class="label-1" href="">Новости</a></span> 
+                                        </div>                                         
+                                        <div class="item-content"> 
+                                            <div class="title-left title-style04 underline04"> 
+                                                <h3><a href="index.html#"><strong> Стена</strong> между Бишкеком и Астаной </a></h3> 
+                                            </div>                                             
+                                            <p><a href="index.html#" target="_blank" class="external-link">Военные силы подтягиваются к границе... .</a></p> 
+                                            <p><a href="index.html#" target="_blank" class="external-link">Граждане Кыргызстана осуждают высказывание Атамбаева в адресс Казастана</a></p> 
+                                            <div> 
+                                                <!-- <a href="" target="_blank"><span class="read-more">23</span></a>  -->
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <!-- End .item-->                                     
+                                    <!-- Begin .item-->                                     
+                                    <div class="item"> 
+                                        <div class="item-image-2">
+                                            <a class="img-link" href="index.html#">
+                                                <img class="img-responsive img-full" src="img/index_800x400-image07.jpg" alt="">
+                                            </a>
+                                            <span><a class="label-5" href="">Экономика</a></span> 
+                                        </div>                                         
+                                        <div class="item-content"> 
+                                            <div class="title-left title-style04 underline04"> 
+                                                <h3><a href="index.html#"><strong>Кашаган</strong> спасение экономики?</a></h3> 
+                                            </div>                                             
+                                            <p><a href="index.html#" target="_blank" class="external-link">Сколько реально можно добывать на Кашагане?</a></p> 
+                                            <p><a href="index.html#" target="_blank" class="external-link">Поможет ли Кашаган избавиться от ВЭД Казахстана?</a></p> 
+                                            <div> 
+                                                <a href="" target="_blank"><span class="read-more">????/span></a> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <!-- End .item-->                                     
+                                    <!-- Begin .item-->                                     
+                                    <div class="item"> 
+                                        <div class="item-image-2">
+                                            <a class="img-link" href="index.html#">
+                                                <img class="img-responsive img-full" src="img/index_800x400-image08.jpg" alt="">
+                                            </a>
+                                            <a class="label-6" href="">Бизнес</a> 
+                                        </div>                                         
+                                        <div class="item-content"> 
+                                            <div class="title-left title-style04 underline04"> 
+                                                <h3><a href="index.html#"><strong>Технологии</strong> Бизнеса </a></h3> 
+                                            </div>                                             
+                                            <p><a href="index.html#" target="_blank" class="external-link">НПП помогает казахстанским компаниям выйти на биржи ближнего зарубежья.</a></p> 
+                                            <p><a href="index.html#" target="_blank" class="external-link">IPO национальных компаний должен послужить примерам частным компаниям.</a></p> 
+                                            <div> 
+                                                <a href="" target="_blank"><span class="read-more">Бизнес</span></a> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <!-- End .item-->                                     
+                                </div>                                 
+                                <!--========== End .NEWS ==========-->                                 
+                            </div>                             
+                            <!--========== End .COL-MD-8 ==========-->                             
+                            <!--========== BEGIN .COL-MD-4 ==========-->                             
+                            <div class="col-md-4"> 
+                                <!-- Begin .sidebar-add-place -->                                 
+                                <div class="sidebar-add-place">
+                                    <a href="" target="_blank">
+                                        <img src="img/banner_400x270.jpg" alt="">
+
+                                </div>                                 
+                                <!-- End .sidebar-add-place -->                                 
+                                <!-- Begin .block-title-1 -->                                 
+                                <div class="block-title-1"> 
+                                    <h3><a href="index.html#"><strong>Live</strong> Новости</a></h3> 
+                                </div>                                 
+                                <!-- End .block-title-1 -->                                 
+                                <!--========== BEGIN .SIDEBAR-NEWSFEED ==========-->                                 
+                                <div class="sidebar-newsfeed"> 
+                                    <!-- Begin .newsfeed -->                                     
+                                    <div class="newsfeed-3"> 
+                                        <ul> 
+                                            <li> 
+                                                <div class="item"> 
+                                                    <div class="item-image">
+                                                        <a class="img-link" href="index.html#">
+                                                            <img class="img-responsive img-full" src="img/index_370x185-image01.jpg" alt="">
+                                                        </a>
+                                                    </div>                                                     
+                                                    <div class="item-content"> 
+                                                        <h4 class="ellipsis"><a href="index.html#">Фото-конкурс от Нур-Отан</a></h4> 
+                                                        <p class="ellipsis"><a href="index.html#">Нур-Отан обьявил фото-конкурс среди детей...</a></p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </li>                                             
+                                            <li> 
+                                                <div class="item"> 
+                                                    <div class="item-image">
+                                                        <a class="img-link" href="index.html#">
+                                                            <img class="img-responsive img-full" src="img/index_370x185-image02.jpg" alt="">
+                                                        </a>
+                                                    </div>                                                     
+                                                    <div class="item-content"> 
+                                                        <h4 class="ellipsis"><a href="index.html#">Иследование: Бургер популярней "Беша"</a></h4> 
+                                                        <p class="ellipsis"><a href="index.html#">Социологи Казахстана бьт тревогу, фаст фуд влияет на нашу культуру.</a></p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </li>                                             
+                                            <li> 
+                                                <div class="item"> 
+                                                    <div class="item-image">
+                                                        <a class="img-link" href="index.html#">
+                                                            <img class="img-responsive img-full" src="img/index_370x185-image03.jpg" alt="">
+                                                        </a>
+                                                    </div>                                                     
+                                                    <div class="item-content"> 
+                                                        <h4 class="ellipsis"><a href="index.html#">Очередь в детский сад</a></h4> 
+                                                        <p class="ellipsis"><a href="index.html#">МОН сделал заявление по вопросу о дошкольного образования...</a></p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </li>                                             
+                                            <li> 
+                                                <div class="item"> 
+                                                    <div class="item-image">
+                                                        <a class="img-link" href="index.html#">
+                                                            <img class="img-responsive img-full" src="img/index_370x185-image04.jpg" alt="">
+                                                        </a>
+                                                    </div>                                                     
+                                                    <div class="item-content"> 
+                                                        <h4 class="ellipsis"><a href="index.html#">В Антарктиде жара</a></h4> 
+                                                        <p class="ellipsis"><a href="index.html#">Экспедиция с северного полюса хотят приехать в Коргалжин по мерзнуть...</a></p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </li>                                             
+                                            <li> 
+                                                <div class="item"> 
+                                                    <div class="item-image">
+                                                        <a class="img-link" href="index.html#">
+                                                            <img class="img-responsive img-full" src="img/index_370x185-image05.jpg" alt="">
+                                                        </a>
+                                                    </div>                                                     
+                                                    <div class="item-content"> 
+                                                        <h4 class="ellipsis"><a href="index.html#">Прививки для Семея</a></h4> 
+                                                        <p class="ellipsis"><a href="index.html#">Только в Семей будут привозить бесплатно таблетки...</a></p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </li>                                             
+                                            <li> 
+                                                <div class="item"> 
+                                                    <div class="item-image">
+                                                        <a class="img-link" href="index.html#">
+                                                            <img class="img-responsive img-full" src="img/index_370x185-image06.jpg" alt="">
+                                                        </a>
+                                                    </div>                                                     
+                                                    <div class="item-content"> 
+                                                        <h4 class="ellipsis"><a href="index.html#">Аксакалы у руля в США</a></h4> 
+                                                        <p class="ellipsis"><a href="index.html#">Американский политик выразил свою критику в адрес Атамбаева.</a></p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </li>                                             
+                                        </ul>                                         
+                                    </div>                                     
+                                    <!-- End .newsfeed -->                                     
+                                </div>                                 
+                                <!--========== END .SIDEBAR-NEWSFEED ==========-->                                 
+                            </div>                             
+                            <!--========== END .COL-MD-4 ==========-->                             
+                        </div>                         
+                    </div>                     
+                </section>                 
+                <!--========== END .MODULE ==========-->                 
+                <!--========== BEGIN .MODULE ==========-->                 
+            <!-- <!-- <!-- <!-- <!--     <section class="module dark"> 
+                    <div class="container"> 
+                        <div class="show-info"> 
+                            <h4 class="schedule-logo bg-1"><a href="" target="_blank">TV Schedule</a></h4> 
+                            <div class="show-title"> 
+                                <h2>News Insight</h2> 
+                                <h3>Hosted by Neal Bailey</h3> 
+                            </div>                             
+                            <h4><a class="show-info-button bg-1" href="index.html#"> Watch the final presidential debate, moderated by Neal Bailey, Tonight at 10 </a></h4> 
+                            <div class="figure">
+                                <img src="img/schedule_figure.png" alt="">
+                            </div>                             
+                        </div>                         
+                        <div class="schedule-squares">
+                            <span class="square2"></span>
+                            <span class="square3"></span>
+                            <span class="square4"></span> 
+                            <span class="square5"></span>
+                            <span class="square6"></span>
+                            <span class="square7"></span>
+                            <span class="square8"></span>
+                            <span class="square9"></span>
+                            <span class="square10"></span>
+                            <span class="square11"></span>
+                        </div>                         
+                    </div>                     
+                </section>                 
+                <!--========== END .MODULE ==========-->                 
+                <!--========== BEGIN .MODULE ==========-->                 
+                <!-- <!-- <!-- <section class="module highlight"> 
+                    <div class="container"> 
+                        <div class="row no-gutter"> 
+                            <!--========== BEGIN .COL-MD-8 ==========-->                             
+                            <!-- <div class="col-md-8">  -->
+                                <!-- <div class="module-title">  -->
+                                    <!-- <h3 class="title"><span class="bg-1">Local News</span></h3> 
+                                    <h3 class="subtitle">Latest News in details</h3> -->
+                               <!-- <!--  --> 
+                       <div class="module-title"> 
+                            <h3 class="title"> </h3> 
+                            <h3 class="subtitle">Карта региональных СМИ</h3> 
+                        </div>
+                              
+                                     
+                        <!--========== END SMALL-GALLERY ==========-->                         
+                        <!-- Begin .bottom-add-place-->                         
+                        <div class="bottom-add-place"> 
+                            <a href="" target="_blank">
+                                <img src="img/banner_1248x100.jpg" alt="">
+                            </a>                             
+                        </div>                         
+                        <!-- End .bottom-add-place -->                         
+                   <!--  </div>    -->                  
+                    <!--========== END .CONTAINER ==========-->                     
+                <!-- </section>    -->              
+                <!--========== END .MODULE ==========-->                 
+            </section>             
+            <!--========== END #MAIN-SECTION ==========-->             
+            <!--========== BEGIN #FOOTER==========-->             
+            <footer id="footer"> 
+                <!-- Begin .parallax -->                 
+                <div id="parallax-section2"> 
+                    <div class="bg parallax2 overlay img-overlay2"> 
+                        <div class="container"> 
+                            <div class="row no-gutter"> 
+                                <div class="col-sm-6 col-md-3"> 
+                                    <h3 class="title-left title-style03 underline03">Карта Регионов</h3> 
+                                    <p class="about-us">Kishkenekol Tany единственный общественно политический портал в Казахстане который придерживается и защищает свободу слова..<br> 
+                Но мы всегда будем на стороне закона и никогда не нарушаем.<br> 
+                We know ... easier said than done. </p> 
+                                    <div class="site-logo">
+                                        <a href="">
+                                            <img src="img/logo.png" alt="Side Logo" /> 
+                                            <h3>Kishkenekol Tany</h3> 
+                                            <p>Цифровизация печатных СМИ</p> 
+                                        </a>
+                                    </div>                                     
+                                </div>                                 
+                                <div class="col-sm-6 col-md-3"> 
+                                    <h3 class="title-left title-style03 underline03">Новости</h3> 
+                                    <div class="footer-post"> 
+                                        <ul> 
+                                            <li> 
+                                                <div class="item"> 
+                                                    <div class="item-image">
+                                                        <a class="img-link" href="">
+                                                            <img class="img-responsive img-full" src="img/index_370x185-image01.jpg" alt="">
+                                                        </a>
+                                                    </div>                                                     
+                                                    <div class="item-content"> 
+                                                        <p class="ellipsis"><a href="index.html#">Фото-конкурс от Нур-Отан.</a></p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </li>                                             
+                                            <li> 
+                                                <div class="item"> 
+                                                    <div class="item-image">
+                                                        <a class="img-link" href="">
+                                                            <img class="img-responsive img-full" src="img/index_370x185-image14.jpg" alt="">
+                                                        </a>
+                                                    </div>                                                     
+                                                    <div class="item-content"> 
+                                                        <p class="ellipsis"><a href="index.html#">С планеты Димаши идут сигналы.</a></p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </li>                                             
+                                            <li> 
+                                                <div class="item"> 
+                                                    <div class="item-image">
+                                                        <a class="img-link" href="">
+                                                            <img class="img-responsive img-full" src="img/food_370x185-image05.jpg" alt="">
+                                                        </a>
+                                                    </div>                                                     
+                                                    <div class="item-content"> 
+                                                        <p class="ellipsis"><a href="index.html#">Ягоды Всегда полезны.</a></p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </li>                                             
+                                            <li> 
+                                                <div class="item"> 
+                                                    <div class="item-image">
+                                                        <a class="img-link" href="">
+                                                            <img class="img-responsive img-full" src="img/index_370x185-image03.jpg" alt="">
+                                                        </a>
+                                                    </div>                                                     
+                                                    <div class="item-content"> 
+                                                        <p class="ellipsis"><a href="index.html#">Места в садике нужно бронировать заранее.</a></p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </li>                                             
+                                        </ul>                                         
+                                    </div>                                     
+                                </div>                                 
+                                <div class="col-sm-6 col-md-3"> 
+                                    <h3 class="title-left title-style03 underline03">Смотреть и слушать</h3> 
+                                    <div class="footer-post"> 
+                                        <ul> 
+                                            <li> 
+                                                <div class="item"> 
+                                                    <div class="item-image">
+                                                        <a class="img-link" href="">
+                                                            <img class="img-responsive img-full" src="img/art-entertainment_370x185-image04.jpg" alt="">
+                                                        </a>
+                                                    </div>                                                     
+                                                    <div class="item-content"> 
+                                                        <p class="ellipsis"><a href="index.html#">Музыка лечит.</a></p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </li>                                             
+                                            <li> 
+                                                <div class="item"> 
+                                                    <div class="item-image">
+                                                        <a class="img-link" href="">
+                                                            <img class="img-responsive img-full" src="img/index_370x185-image15.jpg" alt="">
+                                                        </a>
+                                                    </div>                                                     
+                                                    <div class="item-content"> 
+                                                        <p class="ellipsis"><a href="index.html#">Сериалы на Хабаре супер.</a></p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </li>                                             
+                                            <li> 
+                                                <div class="item"> 
+                                                    <div class="item-image">
+                                                        <a class="img-link" href="">
+                                                            <img class="img-responsive img-full" src="img/index_370x185-image08.jpg" alt="">
+                                                        </a>
+                                                    </div>                                                     
+                                                    <div class="item-content"> 
+                                                        <p class="ellipsis"><a href="index.html#">Но лучше подкасты от Дудя.</a></p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </li>                                             
+                                            <li> 
+                                                <div class="item"> 
+                                                    <div class="item-image">
+                                                        <a class="img-link" href="">
+                                                            <img class="img-responsive img-full" src="img/index_370x185-image16.jpg" alt="">
+                                                        </a>
+                                                    </div>                                                     
+                                                    <div class="item-content"> 
+                                                        <p class="ellipsis"><a href="index.html#">Смотреть телевизор это прикольно!</a></p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </li>                                             
+                                        </ul>                                         
+                                    </div>                                     
+                                </div>                                 
+                                <div class="col-sm-6 col-md-3"> 
+                                    <h3 class="title-left title-style03 underline03">ТЭГИ</h3> 
+                                    <div class="tagcloud">
+                                        <a href="index.html#">Новости</a>
+                                        <a href="index.html#">Спорт</a>
+                                        <a href="index.html#">Графики</a>
+                                        <a href="index.html#">Здоровье</a>
+                                        <a href="index.html#">Бизнес</a>
+                                        <a href="index.html#">Путишествие</a>
+                                        <a href="index.html#">Автомобили</a>
+                                        <a href="index.html#">Сделки</a>
+                                        <a href="index.html#">Корпорации</a>
+                                        <a href="index.html#">Рынки</a>
+                                        <a href="index.html#">Дизайн</a>
+                                        <a href="index.html#">Еда</a>
+                                        <a href="index.html#">Твой регион</a>
+                                        <a href="index.html#">Политика</a>
+                                        <a href="index.html#">Реклама</a>
+                                        <a href="index.html#">Мероприятия</a>
+                                        <a href="index.html#">Праймтайм</a>
+                                        <a href="index.html#">Популизатор</a>
+                                        <a href="index.html#">Робототехника</a>
+                                        <a href="index.html#">Наука</a>
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+                <!-- End .parallax -->                 
+            </footer>             
+            <!--========== END #FOOTER==========-->             
+            <!--========== BEGIN #COPYRIGHTS==========-->             
+            <div id="copyrights"> 
+                <!-- Begin .container -->                 
+                <div class="container"> 
+                    <!-- Begin .copyright -->                     
+                    <div class="copyright"> &copy; 2017, Kaz Content. Все права защищены </div>                     
+                    <!-- End .copyright -->                     
+                    <!--  Begin .footer-social-icons -->                     
+                    <div class="footer-social-icons"> 
+                        <ul> 
+                            <li> 
+                                <a href="index.html#" class="google-plus"><i class="fa fa-google-plus"></i></a> 
+                            </li>                             
+                            <li> 
+                                <a href="index.html#" class="facebook"><i class="fa fa-facebook"></i></a> 
+                            </li>                             
+                            <li> 
+                                <a href="index.html#" class="twitter"><i class="fa fa-twitter"></i></a> 
+                            </li>                             
+                            <li> 
+                                <a href="index.html#" class="linkedin"><i class="fa fa-linkedin"></i></a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <!--  End .footer-social-icons -->                     
+                </div>                 
+                <!-- End .container -->                 
+            </div>             
+            <!--========== END #COPYRIGHTS==========-->             
+        </div>         
+        <!--========== END #WRAPPER ==========-->         
+        <!-- External JavaScripts -->         
+        <script src="js/jquery-3.1.1.min.js"></script>         
+        <script src="js/bootstrap.min.js"></script>         
+        <script src="js/jquery-ui.min.js"></script>         
+        <script src="js/plugins.js"></script>         
+        <!-- JavaScripts -->         
+        <script src="js/functions.js"></script>
+        <script src="js/scripts.js"></script>    
+    </body>     
+</html>
