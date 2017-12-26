@@ -107,21 +107,6 @@
                                     </li>                               
                                 </ul>                                     
                             </li> 
-                            <li id="typeRedactor" style="display:none;" class="dropdown"> 
-                                <a class="dropdown-toggle" data-toggle="dropdown">Тип</a> 
-                                <ul class="dropdown-menu" style="background-color: black;"> 
-                                    <li>
-                                        <a onclick="changeType('1')">Тип 1</a>
-                                    </li>                                         
-                                    <li>
-                                        <a onclick="changeType('2')">Тип 2</a>
-                                    </li>                                                                      
-                                </ul>                                     
-                            </li> 
-                            <li id="redactor">
-                                <a onclick="redactor()">Редактор</a>
-                            </li> 
-
                             <li class="contact">
                                 <a href=""><i class="fa fa-map-marker fa-i"></i></a>
                             </li>                             
@@ -148,9 +133,8 @@
                 <div id="header_drag" class="container"> 
                     <!-- Begin .header-logo -->                     
                     <div id="draggable1" class="header-logo">
-                        <input class="inputFiles" type='file' onchange="changeImgFile(this, 57, 46, 'drag1img');" />
-                        <a href="">
-                            <img id="drag1img" src="img/logo.png" alt="Site Logo" /> 
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="Site Logo" /> 
                             <h1>Web <span>Press</span></h1> 
                             <h4>Цифровизация печатных СМИ</h4> 
                         </a>
@@ -158,7 +142,7 @@
                     <!-- End .header-logo -->                     
                     <!-- Begin .header-add-place -->                     
                     <div id="draggable2" class="header-add-place">
-                        <input class="inputFiles" type='file' onchange="changeImgFile(this, 728, 90, 'drag2img');" />
+                        <input class="inputFiles" type='file' onchange="changeImgFile(this, 728, 90);" />
                         <div class="desktop-add">
                             <a href="" target="_blank">
                                 <img id="drag2img" src="img/banner_728x90.jpg" alt="">
@@ -429,20 +413,22 @@
                                     <a href="index.html">Главная</a>
                                 </li>                                 
                                 <li>
-                                    <a href="novosti.html">Новости</a> 
+                                    <a href="">Новости</a> 
                                 </li>                                 
                                 <li>
-                                    <a href="http://alau.webpress.kz/">Газета Алау</a> 
+                                    <a href="">Аналитика</a> 
                                 </li>                                 
                                 <li>
-                                    <a href="http://kolos.webpress.kz/">Газета Колос</a>
+                                    <a href="">Спорт</a>
                                 </li>                                 
                                 <li>
-                                    <a href="http://student.webpress.kz/">Газета Студент</a>
+                                    <a href="">Здоровье</a>
                                 </li>                                 
-                                                          
                                 <li>
-                                    <a href="http://vesti.webpress.kz/">Газета Вести</a>
+                                    <a href="">Путишествия</a>
+                                </li>                                 
+                                <li>
+                                    <a href="">Культура</a>
                                 </li>                                 
                                 <li>
                                     <a href="">КазКонтентТВ</a>
@@ -495,7 +481,7 @@
                                             <a href="">Главная редакция</a> 
                                         </li>                                         
                                         <li>
-                                            <a href="regionalnii_smi.html">Региональные СМИ</a>
+                                            <a href="">Региональные СМИ</a>
                                         </li>                                         
                                     </ul>                                     
                                 </li>                                 
@@ -675,26 +661,19 @@
             
             <section id="main-section"> 
                 <!-- ========== BEGIN PARALLAX ========== -->                                 
-                <div id="parallax-section" style="display:none;"> 
-                    <div class="image1 img-overlay1"> 
-                        <div class="container"> 
-                            <div class="caption text-center"> 
-                                <div class="color-white text-center weight-300 medium-caption">Свежие новости в цифровом формате</div>                                 
-                                <div class="color-white text-center weight-800 large-caption">Новости города Актобе теперь в онлайн</div>                                 
-                                <div class="color-white text-center weight-400 medium-caption">Читай газету на телефоне</div>                                 
-                             
+                               <!--  <h5>A fire that broke out Tuesday afternoon in the Park West, forcing residents to evacuate, is under control and no one was hurt.</h5>  -->
                             </div>                             
                         </div>                         
                     </div>                     
-                </div>                
-                <!-- ========== END PARALLAX ========== -->               
+                </div>                 
+                <!-- ========== END PARALLAX ========== -->                 
                 <!--========== BEGIN .MODULE ==========-->                 
-                <section class="module" id="firstModule"> 
+                <section class="module"> 
                     <!--========== BEGIN .CONTAINER ==========-->                     
-                    <div class="container" id="firstContainer"> 
+                    <div class="container"> 
                         <!--========== BEGIN .BREAKING-NEWS ==========-->                         
                         <!-- Begin .outer -->                         
-                        <div id="draggable3" class="outer"> 
+                        <div class="outer"> 
                             <div class="breaking-ribbon"> 
                                 <h4>Последние новости</h4> 
                             </div>                             
@@ -733,136 +712,411 @@
                         </div>                         
                         <!-- End .outer -->                         
                         <!--========== END .BREAKING-NEWS ==========--> 
-                          <div id="draggable4" class="module-title"> 
-                            <h3 class="title"> </h3> 
-                            <h3 class="subtitle">ТОП 16 новостей вашего региона</h3> 
-                        </div>                               
-                        <!--========== BEGIN #NEWS-SLIDER ==========-->    
-                        <div id="draggable5">
-                            <div id="news-slider" class="owl-carousel"> 
-                                <div class="news-slide"> 
-                                    <div class="news-slider-layer first"> 
-                                        <a href="" target="_blank"> 
-                                            <div class="content"> 
-                                                <span class="category-tag bg-1">Главное в вашем регионе</span> 
-                                                <p>Обмен опыта по зеленой энергии на EXPO-2017 в Астане</p> 
-                                            </div>                                         
-                                            <img src="img/index_slider-image01.jpg" alt=""> 
-                                        </a>                                     
-                                    </div>                                 
-                                    <div class="news-slider-layer second"> 
-                                        <a href="" target="_blank"> 
-                                            <div class="content"> 
-                                                <span class="category-tag bg-6">Политика</span> 
-                                                <p>Приватизация порта в Актау...</p> 
-                                            </div>                                         
-                                            <img src="img/index_slider-image02.jpg" alt=""> 
-                                        </a>                                     
-                                    </div>                                 
-                                    <div class="news-slider-layer third"> 
-                                        <a href="" target="_blank"> 
-                                            <div class="content"> 
-                                                <span class="category-tag bg-4">СПОРТ</span> 
-                                                <p>Tour de France Астана впереди</p> 
-                                            </div>                                         
-                                            <img src="img/index_slider-image03.jpg" alt=""> 
-                                        </a>                                     
-                                    </div>                                 
-                                    <div class="news-slider-layer fourth"> 
-                                        <a href="" target="_blank"> 
-                                            <div class="content"> 
-                                                <span class="category-tag bg-2">Путишествие</span> 
-                                                <p>Как проверить и купить ЖД билеты онлайн за Рубежом </p> 
-                                            </div>                                         
-                                            <img src="img/index_slider-image04.jpg" alt=""> 
-                                        </a>                                     
-                                    </div>                                 
-                                </div>                             
-                                <div class="news-slide"> 
-                                    <div class="news-slider-layer first"> 
-                                        <a href="" target="_blank"> 
-                                            <div class="content"> 
-                                                <span class="category-tag bg-1">Технологии</span> 
-                                                <p>Дж. Стоун: Я готов консультировать Казахстанские компании</p> 
-                                            </div>                                         
-                                            <img src="img/index_slider-image05.jpg" alt=""> 
-                                        </a>                                     
-                                    </div>                                 
-                                    <div class="news-slider-layer second"> 
-                                        <a href="" target="_blank"> 
-                                            <div class="content"> 
-                                                <span class="category-tag bg-6">Жизнь и мы</span> 
-                                                <p>Самые модные цвета лета 2018</p> 
-                                            </div>                                         
-                                            <img src="img/index_slider-image06.jpg" alt=""> 
-                                        </a>                                     
-                                    </div>                                 
-                                    <div class="news-slider-layer third"> 
-                                        <a href="" target="_blank"> 
-                                            <div class="content"> 
-                                                <span class="category-tag bg-4">Главное</span> 
-                                                <p>ООН: Мир молчит о Гаити после событий 2009 г.</p> 
-                                            </div>                                         
-                                            <img src="img/index_slider-image07.jpg" alt=""> 
-                                        </a>                                     
-                                    </div>                                 
-                                    <div class="news-slider-layer fourth"> 
-                                        <a href="" target="_blank"> 
-                                            <div class="content"> 
-                                                <span class="category-tag bg-2">Мы и окружение</span> 
-                                                <p>Полезный завтрак защищает нашу жинь от таксинов</p> 
-                                            </div>                                         
-                                            <img src="img/index_slider-image08.jpg" alt=""> 
-                                        </a>                                     
-                                    </div>                                 
-                                </div>                             
-                                <div class="news-slide"> 
-                                    <div class="news-slider-layer first"> 
-                                        <a href="" target="_blank"> 
-                                            <div class="content"> 
-                                                <span class="category-tag bg-1">Последние новости</span> 
-                                                <p>Беспорядки на улицах Каталонии после ввода войс Мадридом</p> 
-                                            </div>                                         
-                                            <img src="img/index_slider-image09.jpg" alt=""> 
-                                        </a>                                     
-                                    </div>                                 
-                                    <div class="news-slider-layer second"> 
-                                        <a href="" target="_blank"> 
-                                            <div class="content"> 
-                                                <span class="category-tag bg-6">Политика</span> 
-                                                <p>ЕС пляшет под дудку Меркель и Трампа</p> 
-                                            </div>                                         
-                                            <img src="img/index_slider-image10.jpg" alt=""> 
-                                        </a>                                     
-                                    </div>                                 
-                                    <div class="news-slider-layer third"> 
-                                        <a href="" target="_blank"> 
-                                            <div class="content"> 
-                                                <span class="category-tag bg-4">Спорт Футбол</span> 
-                                                <p>Барселона победила не смотря на запрет Мадрида</p> 
-                                            </div>                                         
-                                            <img src="img/index_slider-image11.jpg" alt=""> 
-                                        </a>                                     
-                                    </div>                                 
-                                    <div class="news-slider-layer fourth"> 
-                                        <a href="" target="_blank"> 
-                                            <div class="content"> 
-                                                <span class="category-tag bg-2">Здоровье</span> 
-                                                <p>Сколько будут стоить таблетки для пенсионеров после СМС</p> 
-                                            </div>                                         
-                                            <img src="img/index_slider-image12.jpg" alt=""> 
-                                        </a>                                     
-                                    </div>                                 
-                                </div>                             
-                            </div>  
-                        </div>                     
-                                                   
-                        <!--========== END .NEWS-SLIDER ==========-->                         
-                    </div>                     
+                          <div class="module-title"> 
+                <h3 class="title"> </h3> 
+        <div class="row no-gutter"> 
+          <!--========== BEGIN .COL-MD-8 ==========-->
+          <div class="col-md-8"> 
+            <!--========== BEGIN .POST ==========-->
+            <div class="post post-full clearfix">
+              <div class="entry-media"> </div>
+              <div class="entry-main">
+                <div class="entry-title">
+                  <h4 class="entry-title"><a href="#">Ссылки на Региональные СМИ</a></h4>
+                </div>
+               
+           	<!-- 
+               <div class="post-meta-elements">
+                  <div class="post-meta-author"> <i class="fa fa-user"></i><a href="#">Автор статьи</a> </div>
+                 <div class="post-meta-date"> <i class="fa fa-calendar"></i>19 декабря, 2017 </div>
+                  <div class="post-meta-comments"> <i class="fa fa-comment-o"></i><a href="#">23 Комментария</a> </div>
+                </div> 
+            -->
+                <div class="entry-content"><br>
+                    ﻿
+    			<p>
+                
+    			<h5><a href="alau.webpress.kz.">Газета- «Алау»</a></h5>
+                <h5><a href="http://shool-time.webpress.kz">Газета- «Shool time»</a></h5>
+    			<h5><a href="http://energetik-prikaspiya.webpress.kz">Газета- «Энергетик Прикаспия»</a></h5>
+    			<h5><a href="http://shanyrak-kelbeti.webpress.kz">Газета- «Шаңырақ келбеті»</a></h5>
+    			<h5><a href="http://soltustik-zhuldyzy.webpress.kz">Газета- «Солтүстік жұлдызы»</a></h5>
+    			<h5><a href="http://vestnik-alumii-kazakhstana.webpress.kz">Газета- «Вестник Алюминий Казахстана»</a></h5>
+    			<h5><a href="http://bulandy-akparat.webpress.kz">Газета- «Бұланды Ақпарат»</a></h5>
+    			<h5><a href="http://vesti-arshali.webpress.kz">Газета- «Вести Аршалы»</a></h5>
+    			<h5><a href="http://zeren.webpress.kz">Газета- «Зерен»</a></h5>
+    			<h5><a href="http://zerdeli-zerendi.webpress.kz">Газета- «Зерделі Зеренді»</a></h5>
+    			<h5><a href="http://rodnie-prostory.webpress.kz">Газета- «Родные просторы»</a></h5>
+    			<h5><a href="http://paryz.webpress.kz">Газета- «Парыз»</a></h5>
+    			<h5><a href="http://atyrau-onirinin-energetigi.webpress.kz">Газета- «Атырау өңірінің энергетигі»</a></h5>
+    			<h5><a href="http://orleu.webpress.kz">Газета- «Өрлеу»</a></h5>
+    			<h5><a href="http://mobilnaya-gazeta.webpress.kz">Газета- «Мобильная газета»</a></h5>
+    			<h5><a href="http://severnoe-pribalkhashe.webpress.kz">Газета- «Северное Прибалхашье»</a></h5>
+    			<h5><a href="http://znamya-rodini-kz.webpress.kz">Газета- «Знамя Родины KZ»</a></h5>
+    			<h5><a href="http://nasledie-kazakhstana.webpress.kz">Газета- «Наследие Казахстана»</a></h5>
+    			<h5><a href="http://jemchuzhina-kazakhstana.webpress.kz">Газета- «Жемчужина Казахстана»</a></h5>
+    			<h5><a href="http://esil-tany.webpress.kz">Газета- «Есіл таңы»</a></h5>
+    			<h5><a href="http://enbekshilder-jarshysy-vesti-enbekshilderiya.webpress.kz">Газета- «Еңбекшілдер жаршысы-Вести Енбекшильдерья»</a></h5>
+    			<h5><a href="http://sandyktauskii-krai.webpress.kz">Газета- «Сандыктауский край»</a></h5>
+    			<h5><a href="http://vesti.webpress.kz">Газета- «Вести»</a></h5>
+    			<h5><a href="http://balkash-oiniri.webpress.kz">Газета- «Балқаш өңірі»</a></h5>
+    			<h5><a href="http://ardager-veteran.webpress.kz">Газета- «Ардагер-ветеран»</a></h5>
+    			<h5><a href="http://akmolinskaya-pravda.webpress.kz">Газета- «Акмолинская правда»</a></h5>
+    			<h5><a href="http://akkol-omiri.webpress.kz">Газета- «Ақкөл өмірі»</a></h5>
+    			<h5><a href="http://tokyrauyn-tynysy.webpress.kz">Газета- «Тоқырауын тынысы»</a></h5>
+    			<h5><a href="http://saryarka.webpress.kz">Газета- «Сарыарқа»</a></h5>
+    			<h5><a href="http://shakhtinskii-vestnik.webpress.kz">Газета- «Шахтинский вестник»</a></h5>
+    			<h5><a href="http://novator.webpress.kz">Газета- «Новатор»</a></h5>
+    			<h5><a href="http://akkayin.webpress.kz">Газета- «Аққайын»</a></h5>
+    			<h5><a href="http://znamya-truda.webpress.kz">Газета- «Знамя труда»</a></h5>
+    			<h5><a href="http://zhezkazganskii-vestnik.webpress.kz">Газета- «Жезказганский вестник»/a></h5>
+    			<h5><a href="http://esil-nura.webpress.kz">Газета- «Есіл-Нұра»</a></h5>
+    			<h5><a href="http://vestnik-akmola.webpress.kz">Газета- «Вестник Акмола»</a></h5>
+    			<h5><a href="http://country-news.webpress.kz">Газета- «Country News»</a></h5>
+    			<h5><a href="http://uralskii-reporter.webpress.kz">Газета- «Уральский репортёр»</a></h5>
+    			<h5><a href="http://puls-goroda.webpress.kz">Газета- «Пульс города»</a></h5>
+    			<h5><a href="http://ogni-priirtyshya-ak-bulak.webpress.kz">Газета- «Огни Прииртышья-Ақ бұлақ»</a></h5>
+    			<h5><a href="http://kolos.webpress.kz">Газета- «Колос»</a></h5>
+    			<h5><a href="http://akzharskie-vesti.webpress.kz">Газета- «Акжарские вести»</a></h5>
+    			<h5><a href="http://kishkenekol-tany.webpress.kz">Газета- «Кішкенекөл таңы»</a></h5>
+    			<h5><a href="http://nurly-el.webpress.kz">Газета- «Нұрлы ел»</a></h5>
+    			<h5><a href="http://kyzylyu.webpress.kz">Газета- «Қызылту»</a></h5>
+				<h5><a href="http://ishim.webpress.kz">Газета- «Ишим»</a></h5>
+    			<h5><a href="http://aiyrtau-tani.webpress.kz">Газета- «Айыртау таңы»</a></h5>
+    			<h5><a href="http://dyastur-men-dyaris.webpress.kz">Газета- «Дәстүр мен дәріс»</a></h5>
+    			<h5><a href="http://kyzylkoga.webpress.kz">Газета- «Қызылқоға»</a></h5>
+    			<h5><a href="http://dender.webpress.kz">Газета- «Дендер»</a></h5>
+    			<h5><a href="http://serper.webpress.kz">Газета- «Серпер»</a></h5>
+    			<h5><a href="http://makat-tynysy.webpress.kz">Газета- «Мақат тынысы»</a></h5>
+    			<h5><a href="http://ken-zhiloi.webpress.kz">Газета- «Кең Жылой»</a></h5>
+    			<h5><a href="http://zhaik-shugylasi.webpress.kz">Газета- «Жайық шұғыласы»</a></h5>
+    			<h5><a href="http://narin-tany.webpress.kz">Газета- «Нарын таңы»</a></h5>
+    			<h5><a href="http://abay-akikat.webpress.kz">Газета- «Абай-Ақиқат»</a></h5>
+    			<h5><a href="http://el-zhane-mugalim.webpress.kz">Газета- «Ел және мұғалім»</a></h5>
+    			<h5><a href="http://altyn-astyk.webpress.kz">Газета- «Алтын астық»</a></h5>
+    			<h5><a href="http://til-sakshysi.webpress.kz">Газета- «Тіл сақшысы»</a></h5>
+    			<h5><a href="http://ertis-oniri.webpress.kz">Газета- «Ертіс өңірі»</a></h5>
+    			<h5><a href="http://shugyla-raduga.webpress.kz">Газета- «Шұғыла-Радуга»</a></h5>
+    			<h5><a href="http://spektr.webpress.kz">Газета- «Спектр»</a></h5>
+    			<h5><a href="http://agroinfo.webpress.kz">Газета- «АгроИнфо»</a></h5>
+    			<h5><a href="http://taiynsha-tany.webpress.kz">Газета- «Тайынша таңы»</a></h5>
+    			<h5><a href="http://tainshinskie-vesti.webpress.kz">Газета- «Тайншинские вести»</a></h5>
+    			<h5><a href="http://nurly-koksu.webpress.kz">Газета- «Нұрлы көксу»</a></h5>
+    			<h5><a href="http://zhetisu-shygilasi.webpress.kz">Газета- «Жетісу шұғыласы»</a></h5>
+    			<h5><a href="http://khantyaniri.webpress.kz">Газета- «Хантәңірі»</a></h5>
+    			<h5><a href="http://til-mereii.webpress.kz">Газета- «Тіл мерейі»</a></h5>
+
+				</p>
+
+                
+                </div>
+
+              </div>
+            </div>
+            <!--  End .post --> 
+
+            <!--  Begin .comment-section -->
+            <div class="comment-section"> 
+              <!-- Begin .title-style01 -->
+              <div class="comment-title title-style01">
+                <h4>3 Комментария</h4>
+              </div>
+              <!-- End .title-style01 -->
+              <ul class="comments-list">
+                <li>
+                  <div class="comment clearfix">
+                    <div class="avatar"><img src="img/avatar01.jpg" tppabs="http://via-theme.com/24hNews/img/avatar01.jpg" alt="avatar" class="img-responsive"></div>
+                    <div class="comment-content">
+                      <div class="comment-title">
+                        <h5 class="comment-author">Анонимно</h5>
+                        <div class="comment-date"><i class="fa fa-calendar"></i><span class="day"> 19 декабря, 2017</span></div>
+                      </div>
+                      <p>Здесть какие то рандомные комментарии от пользователей, скорее всего анонимно, либо через социальные сети.</p>
+                      <button type="button" class="comment-btn btn btn-default">ответить</button>
+                      <button type="button" class="comment-btn btn btn-primary">редактировать</button>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                <ul class="children">
+                  <li>
+                    <div class="comment clearfix">
+                      <div class="avatar"><img src="img/avatar02.jpg" tppabs="http://via-theme.com/24hNews/img/avatar02.jpg" alt="avatar" class="img-responsive"></div>
+                      <div class="comment-content">
+                        <div class="comment-title">
+                          <h5 class="comment-author">Аноним</h5>
+                          <div class="comment-date"><i class="fa fa-calendar"></i><span class="day"> 19 декабря, 2017</span></div>
+                        </div>
+                        <p>Здесть какие то рандомные комментарии от пользователей, скорее всего анонимно, либо через социальные сети.</p>
+                        <button type="button" class="comment-btn btn btn-default">ответить</button>
+                      <button type="button" class="comment-btn btn btn-primary">редактировать</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                </li>
+                <li>
+                  <div class="comment clearfix">
+                    <div class="avatar"><img src="img/avatar03.jpg" tppabs="http://via-theme.com/24hNews/img/avatar03.jpg" alt="avatar" class="img-responsive"></div>
+                    <div class="comment-content">
+                      <div class="comment-title">
+                        <h5 class="comment-author">Аноним</h5>
+                        <div class="comment-date"><i class="fa fa-calendar"></i><span class="day"> 19 декабря, 2017</span></div>
+                      </div>
+                      <p>Здесть какие то рандомные комментарии от пользователей, скорее всего анонимно, либо через социальные сети.</p>
+                      <button type="button" class="comment-btn btn btn-default">ответить</button>
+                      <button type="button" class="comment-btn btn btn-primary">редактировать</button>
+                    </div>
+                  </div>
+                </li>
+               
+           
+              </ul>
+            </div>
+            <!--  End .comment-section --> 
+            <!--  Begin .form-reply-section -->
+            
+            <div class="form-reply-section">
+              <div class="comment-title title-style01">
+                <h4>Оставить комментарий</h4>
+              </div>
+              <form class="form-reply ui-form" action="#" method="post">
+                <div class="row no-gutter">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input placeholder="Имя" class="form-control" type="text" title="Reply"/>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <input placeholder="Email" class="form-control" type="email" title="Email"/>
+                  </div>
+                </div>
+                <div class="row no-gutter">
+                  <div class="col-md-12">
+                    <textarea rows="5" placeholder="Комментарий" class="form-control" title="Comment"></textarea>
+                  </div>
+                </div>
+                <div class="row no-gutter">
+                  <div class="col-md-12">
+                    <button class="btn btn-primary btn-black">Отправить</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            
+            <!--  End .form-reply-section --> 
+          </div>
+          <!--========== END .COL-MD-8 ==========--> 
+          <!--========== BEGIN .COL-MD-4==========-->
+          <div class="col-md-4"> 
+            <!--========== BEGIN #SIDEBAR-NEWSFEED ==========--> 
+            <!-- Begin .block-title-2 -->
+            <div class="block-title-2">
+              <h3>Последние посты</h3>
+            </div>
+            <!-- End .block-title-2 -->
+            <div class="sidebar-newsfeed"> 
+              <!-- Begin .newsfeed -->
+              <div class="newsfeed-1">
+                <ul>
+                  <li>
+                    <div class="item">
+                      <div class="item-image"><a class="img-link" href="#"><img class="img-responsive img-full" src="img/news_370x185-image01.jpg" tppabs="http://via-theme.com/24hNews/img/news_370x185-image01.jpg" alt=""></a></div>
+                      <div class="item-content">
+                        <h4 class="ellipsis"><a href="#">Мировой кризис</a></h4>
+                        <p class="ellipsis"><a href="#">Темой для обсуждения новый санцкций против России...</a></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="item-image"><a class="img-link" href="#"><img class="img-responsive img-full" src="img/news_370x185-image02.jpg" tppabs="http://via-theme.com/24hNews/img/news_370x185-image02.jpg" alt=""></a></div>
+                      <div class="item-content">
+                        <h4 class="ellipsis"><a href="#">Самый умный</a></h4>
+                        <p class="ellipsis"><a href="#">Самый умный школьник живет в маленьком селе Казахстана...</a></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="item-image"><a class="img-link" href="#"><img class="img-responsive img-full" src="img/news_370x185-image03.jpg" tppabs="http://via-theme.com/24hNews/img/news_370x185-image03.jpg" alt=""></a></div>
+                      <div class="item-content">
+                        <h4 class="ellipsis"><a href="#">Полнолуние</a></h4>
+                        <p class="ellipsis"><a href="#">Этой ночью Вы можете увидеть полнолуние...</a></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="item-image"><a class="img-link" href="#"><img class="img-responsive img-full" src="img/news_370x185-image04.jpg" tppabs="http://via-theme.com/24hNews/img/news_370x185-image04.jpg" alt=""></a></div>
+                      <div class="item-content">
+                        <h4 class="ellipsis"><a href="#">Новый указ Президента</a></h4>
+                        <p class="ellipsis"><a href="#">Назначен новый Премьер-министр РК Казахстан</a></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="item-image"><a class="img-link" href="#"><img class="img-responsive img-full" src="img/news_370x185-image05.jpg" tppabs="http://via-theme.com/24hNews/img/news_370x185-image05.jpg" alt=""></a></div>
+                      <div class="item-content">
+                        <h4 class="ellipsis"><a href="#">Женский феминизм</a></h4>
+                        <p class="ellipsis"><a href="#">В Астане прощел форум казахских феминисток...</a></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="item-image"><a class="img-link" href="#"><img class="img-responsive img-full" src="img/news_370x185-image06.jpg" tppabs="http://via-theme.com/24hNews/img/news_370x185-image06.jpg" alt=""></a></div>
+                      <div class="item-content">
+                        <h4 class="ellipsis"><a href="#">В 50 лет как в 18</a></h4>
+                        <p class="ellipsis"><a href="#">Уникальный человек, выглядит в 50 лет как в свои 18 лет...</a></p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- End .newsfeed --> 
+            </div>
+            <!--========== END #SIDEBAR-NEWSFEED ==========-->
+             <!--========== BEGIN .TV SCHEDULE ==========-->
+            <div class="sidebar-schedule"> 
+              <!-- Begin .block-title-2 -->
+              <div class="block-title-2">
+                <h3><strong>Мировые</strong> Новости</h3>
+                </div>
+              <!-- End .block-title-2 -->
+              <div id="sidebar-schedule-slider" class="owl-carousel"> 
+                <!-- Begin .schedule-slide -->
+                <div class="sidebar-schedule-slide">
+                  <div class="sidebar-schedule-slider-layer full"> 
+                    <div class="content">
+                      <h3 class="hour-tag">18:00</h3>
+                      <h4 class="sidebar-show-title bg-1">Политика США</h4>
+                      <p>Администрация США развязывает новую войну на Ближнем Востоке?</p>
+                    </div>
+                    <img src="img/sidebar-schedule_slider-image01.jpg" tppabs="http://via-theme.com/24hNews/img/sidebar-schedule_slider-image01.jpg" alt=""> </a> </div>
+                </div>
+                <!-- End .schedule-slide --> 
+                <!-- Begin .schedule-slide -->
+
+                <!-- End .schedule-slide --> 
+                <!-- Begin .schedule-slide -->
+
+                <!-- End .schedule-slide --> 
+              </div>
+            </div>
+            <!--========== END .TV SCHEDULE ==========--> 
+            <!--========== BEGIN .SIDEBAR-POST ==========--> 
+            <!-- Begin .title-style02 -->
+            <div class="title-style02">
+              <h3><strong>Политические </strong> новости</h3>
+            </div>
+            <!-- End .title-style02 -->
+            <div class="sidebar-post">
+              <ul>
+               <li>
+                  <div class="item">
+                    <div class="item-image"><a class="img-link" href="#"><img class="img-responsive img-full" src="img/news_370x185-image07.jpg" tppabs="http://via-theme.com/24hNews/img/news_370x185-image07.jpg" alt=""></a></div>
+                    <div class="item-content">
+                      <h3>01</h3>
+                      <p><a href="#">Выборы 2018 в России, кто победит?</a></p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <div class="item-image"><a class="img-link" href="#"><img class="img-responsive img-full" src="img/news_370x185-image08.jpg" tppabs="http://via-theme.com/24hNews/img/news_370x185-image08.jpg" alt=""></a></div>
+                    <div class="item-content">
+                      <h3>02</h3>
+                      <p><a href="#">В Кыргызстане новый президент, чего ожидать Кахахстану...</a></p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <div class="item-image"><a class="img-link" href="#"><img class="img-responsive img-full" src="img/news_370x185-image09.jpg" tppabs="http://via-theme.com/24hNews/img/news_370x185-image09.jpg" alt=""></a></div>
+                    <div class="item-content">
+                      <h3>03</h3>
+                      <p><a href="#">Перестановки в верхушке правления Кахахстана...</a></p>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+            <!--========== END .SIDEBAR-POST ==========--> 
+            <!-- Begin .sidebar-add-place -->
+            <div class="sidebar-add-place">
+              <a href="#" target="_blank"><img src="img/banner_400x270.jpg" tppabs="http://via-theme.com/24hNews/img/banner_400x270.jpg" alt=""></a>
+            </div>
+            <!-- End .sidebar-add-place --> 
+            <!--========== BEGIN .SIDEBAR-CATEGORIES ==========--> 
+            <!-- Begin .block-title-1 -->
+            <div class="block-title-1 center">
+              <h3>Категории</h3>
+            </div>
+            <!-- End .block-title-1 -->
+            <div class="sidebar-categories">
+              <ul class="list list-mark-1">
+                <li><a href="#">Новости</a> <span>09</span> </li>
+                <li><a href="#">Бизнес</a> <span>11</span> </li>
+                <li><a href="#">Политика</a> <span>15</span> </li>
+                <li><a href="#">Медецина</a> <span>10</span> </li>
+                <li><a href="#">Путешествия</a> <span>17</span> </li>
+                <li><a href="#">Другие</a> <span>97</span> </li>
+              </ul>
+            </div>
+            <!--========== END .SIDEBAR-CATEGORIES ==========--> 
+            
+            <!--========== BEGIN .SIDEBAR-REVIEWS==========-->
+            <!-- Begin .block-title-3 -->
+
+            <!--========== END .SIDEBAR-REVIEWS ==========--> 
+            
+            <!--========== BEGIN .CALENDAR==========-->
+         
+            <!--========== END .CALENDAR ==========--> 
+            <!--========== BEGIN #SIDEBAR-NEWSLETTER ==========-->
+            <div id="sidebar-newsletter"> 
+              <!-- Begin .title-style01 -->
+              <div class="title-style01">
+                <h3><strong>Новостная лента</strong></h3>
+              </div>
+              <!-- End .title-style01 --> 
+              <!-- Begin .sidebar-newsletter-form -->
+              <div class="sidebar-newsletter-form">
+                <form class="form-horizontal" action="http://via-theme.com/24hNews/include/subscribe.php" id="subscribeForm" method="POST">
+                  <div class="input-group">
+                    <input title="Newsletter" class="form-control" name="email" type="email" id="address" placeholder="Оставьте свой email" data-validate="validate(required, email)" required>
+                    <span class="input-group-btn">
+                    <button type="submit" class="btn btn-success">Подписаться</button>
+                    </span> </div>
+                </form>
+                <span id="result" class="alertMsg"></span> </div>
+              <!-- End .sidebar-newsletter-form --> 
+            </div>
+            <!--========== END #SIDEBAR-NEWSLETTER ==========--> 
+            <!--========== BEGIN #SIDEBAR-SOCIAL-BUTTONS ==========-->
+            <div id="sidebar-social-icons">
+              <ul class="sidebar-social-icons">
+                <li> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> </li>
+                <li> <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> </li>
+                <li> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> </li>
+                <li> <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> </li>
+                <li> <a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a> </li>
+                <li> <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> </li>
+                <li> <a href="#" class="rss"><i class="fa fa-rss"></i></a> </li>
+                <li> <a href="#" class="tumblr"><i class="fa fa-tumblr"></i></a> </li>
+              </ul>
+            </div>
+            <!--========== END #SIDEBAR-SOCIAL-BUTTONS ==========--> 
+          </div>
+          <!--========== END .COL-MD-4 ==========--> 
+        </div>                 
                 </section>                 
                 <!--========== END .MODULE ==========-->                 
                 <!--========== BEGIN .MODULE ==========-->                 
-                <section id="secondModule" class="module highlight" wp-site-content wp-body-class wp-site-name wp-title wp-site-desc wp-header-image> 
+                <section class="module highlight" wp-site-content wp-body-class wp-site-name wp-title wp-site-desc wp-header-image> 
                     <div class="container"> 
                         <div class="module-title"> 
                             <h3 class="title"><span class="bg-1" style="background-color:#0023a0">ТОП</span></h3> 
@@ -872,47 +1126,10 @@
 
                         <!-- Begin .bottom-add-place-->                         
                         <div class="bottom-add-place"> 
-                            <img src="img/Foto_topnews_1248x100.jpg" usemap="#mapSlider2" class="map">
-                            <map name="mapSlider2" id="ImageMapsCom-image-maps-2017-12-26-164731">
-                                <area  data-toggle="tooltip" title="expo2017" href="newpost_1.html" shape="rect" coords="26,228,282,394"/>
-                                <area  data-toggle="tooltip" title="expo2017" href="newpost_1.html" shape="rect" coords="81,395,284,564"/>
-                                <area  data-toggle="tooltip" title="expo2017" href="newpost_1.html" shape="rect" coords="615,37,873,192"/>
-                                <area  data-toggle="tooltip" title="expo2017" href="newpost_1.html" shape="rect" coords="617,189,871,322"/>
-                                <area  data-toggle="tooltip" title="expo2017" href="newpost_1.html" shape="rect" coords="971,289,1227,456"/>
-                                <area  data-toggle="tooltip" title="expo2017" href="newpost_1.html" shape="rect" coords="449,175,617,426"/>
-                                <area  data-toggle="tooltip" title="expo2017" href="newpost_1.html" shape="rect" coords="449,425,617,682"/>
-                                <area  data-toggle="tooltip" title="expo2017" href="newpost_1.html" shape="rect" coords="282,286,450,541"/>
-                                <area  data-toggle="tooltip" title="expo2017" href="newpost_1.html" shape="rect" coords="616,512,786,767"/>
-                                <area  data-toggle="tooltip" title="expo2017" href="newpost_1.html" shape="rect" coords="784,454,951,709"/>
-                                <area  data-toggle="tooltip" title="expo2017" href="newpost_1.html" shape="poly" coords="874,127,1037,130,1040,289,970,288,971,322,871,321"/>
-                                <area  data-toggle="tooltip" title="expo2017" href="newpost_1.html" shape="poly" coords="617,323,970,323,971,510,952,512,951,456,784,454,783,512,616,511"/>
-                                <area  data-toggle="tooltip" title="expo2017" href="newpost_1.html" shape="poly" coords="1202,458,1204,619,953,620,951,513,969,514,972,455"/>
-                                <area  data-toggle="tooltip" title="expo2017" href="newpost_1.html" shape="poly" coords="283,540,384,540,383,684,132,684,131,566,282,564"/>
-                            </map>
-                            <map name="mapSlider">
-                                <area id="mapSlider1" data-toggle="tooltip" title="EXPO-2017" href="newpost_1.html" shape="rect" coords="26,227,283,394"/>
-                                <area id="mapSlider2" data-toggle="tooltip" title="Aaaaaa" href="newpost_1.html" shape="rect" coords="82,395,282,542"/>
-                                <area id="mapSlider3" data-toggle="tooltip" title="Aaaaaa" href="newpost_1.html" shape="rect" coords="130,540,384,684"/>
-                                <area id="mapSlider4" data-toggle="tooltip" title="Aaaaaa" href="newpost_1.html" shape="rect" coords="283,287,447,539"/>
-                                <area id="mapSlider5" data-toggle="tooltip" title="Aaaaaa" href="newpost_1.html" shape="rect" coords="450,174,614,428"/>
-                                <area id="mapSlider6" data-toggle="tooltip" title="Aaaaaa" href="newpost_1.html" shape="rect" coords="449,429,615,680"/>
-                                <area id="mapSlider7" data-toggle="tooltip" title="Aaaaaa" href="newpost_1.html" shape="rect" coords="617,37,871,190"/>
-                                <area id="mapSlider8" data-toggle="tooltip" title="Aaaaaa" href="newpost_1.html" shape="rect" coords="614,191,871,323"/>
-                                <area id="mapSlider9" data-toggle="tooltip" title="Aaaaaa" href="newpost_1.html"  shape="poly" coords="616,323,616,510,784,511,782,455,949,457,951,509,972,510,972,323"/>
-                                <area id="mapSlider10" data-toggle="tooltip" title="Aaaaaa" href="newpost_1.html" shape="rect" coords="616,511,782,767"/>
-                                <area id="mapSlider11" data-toggle="tooltip" title="Aaaaaa" href="newpost_1.html" shape="rect" coords="873,128,1040,291"/>
-                                <area id="mapSlider12" data-toggle="tooltip" title="Aaaaaa" href="newpost_1.html" shape="rect" coords="785,455,952,709"/>
-                                <area id="mapSlider13" data-toggle="tooltip" title="Aaaaaa" href="newpost_1.html" shape="rect" coords="974,294,1224,455"/>
-                                <area id="mapSlider14" data-toggle="tooltip" title="Aaaaaa" href="newpost_1.html" shape="rect" coords="976,462,1203,623"/>
-                            </map>                       
-                        </div> 
-                        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-sm">
-                            <div class="modal-content">
-                                text
-                            </div>
-                          </div>
-                        </div>        
+                            <a href="" target="_blank">
+                                <img src="img/Foto_topnews_1248x100.jpg" alt="">
+                            </a>                             
+                        </div>                         
                         <!-- End .bottom-add-place -->
 
                         <div class="row no-gutter"> 
@@ -928,308 +1145,9 @@
                         </div>                         
                     </div>                     
                 </section>                 
-                <!--========== END .MODULE ==========--> 
-                <section id="fourthModule" class="module highlight" style="display:none;"> 
-                    <div class="container"> 
-                        <div class="row no-gutter"> 
-                            <!--========== BEGIN .COL-MD-8 ==========-->                             
-                            <div class="col-md-8"> 
-                                <div class="module-title"> 
-                                    <h3 class="title"><span class="bg-1">Новости</span></h3> 
-                                    <h3 class="subtitle">Свежие новости г. Актобе</h3> 
-                                </div>                                 
-                                <!--========== BEGIN .ROW ==========-->                                 
-                                <div class="row no-gutter"> 
-                                    <!--========== BEGIN .COL-MD-3 ==========-->                                     
-                                    <div class="col-xs-12 col-sm-3 col-md-3"> 
-                                        <!-- Begin .list list-mark-1 -->                                         
-                                        <ul class="list list-mark-1"> 
-                                            <li>
-                                                <a href="index.html">Главная</a>
-                                            </li>                                             
-                                            <li>
-                                                <a href="watch-live.html">США</a>
-                                            </li>                                             
-                                            <li>
-                                                <a href="24-tv-radio.html">Трамп</a>
-                                            </li>                                             
-                                            <li>
-                                                <a href="web-shows.html">Политика</a>
-                                            </li>                                             
-                                            <li>
-                                                <a href="24-news-store.html">Россия</a>
-                                            </li>                                             
-                                            <li>
-                                                <a href="tv-schedule.html">Назарбаев</a>
-                                            </li>                                             
-                                            <li>
-                                                <a href="news.html">Казахстан</a>
-                                            </li>                                             
-                                            <li>
-                                                <a href="politics.html">Криптовалюта</a> | 
-                                                <a href="business.html">Биткоин</a>
-                                            </li>                                             
-                                            <li>
-                                                <a href="tech-science.html">Бизнес</a>
-                                            </li>                                             
-                                            <li>
-                                                <a href="lifestyle.html">Наука</a>
-                                            </li>                                             
-                                            <li>
-                                                <a href="sport.html">Медицина</a>
-                                            </li>                                             
-                                            <li>
-                                                <a href="americanfootball.html">Футбол</a>
-                                            </li>                                             
-                                            <li>
-                                                <a href="soccer.html">ФК Актобе</a>
-                                            </li>                                             
-                                                 
-                                        </ul>                                         
-                                        <!-- End .list list-mark-1 -->                                         
-                                    </div>                                     
-                                    <!--========== END .COL-MD-3 ==========-->                                     
-                                    <!--========== BEGIN .COL-MD-9 ==========-->                                     
-                                    <div class="col-xs-12 col-sm-9 col-md-9"> 
-                                        <!--========== BEGIN .NEWS ==========-->                                         
-                                        <div class="news"> 
-                                            <div class="item"> 
-                                                <div class="item-image-3">
-                                                    <a class="img-link" href="#">
-                                                        <img class="img-responsive img-full" src="img/index_800x400-image09.jpg" alt="">
-                                                    </a>
-                                                    <span><a class="label-1" href="news.html">Срочные новости</a></span> 
-                                                </div>                                                 
-                                                <div class="item-content"> 
-                                                    <div class="title-left title-style04 underline04"> 
-                                                        <h3><a href="#"><strong>Рынок Шанхай горел в Астане</strong></a></h3> 
-                                                    </div>                                                     
-                                                    <p><a href="#" target="_blank" class="external-link"> Сгорели склады на местном рынке в Астане, пострадавших нет...</a></p> 
-                                                    <div> 
-                                                        <a href="watch-live.html" target="_blank"><span class="read-more"></span></a> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                            </div>                                             
-                                            <div class="item"> 
-                                                <div class="item-image-3">
-                                                    <a class="img-link" href="#">
-                                                        <img class="img-responsive img-full" src="img/index_800x400-image10.jpg" alt="">
-                                                    </a>
-                                                    <span><a class="label-4" href="travel.html">Спорт</a></span> 
-                                                </div>                                                 
-                                                <div class="item-content"> 
-                                                    <div class="title-left title-style04 underline04"> 
-                                                        <h3><a href="#"><strong>ФК Астана</strong> в плей-офф</a></h3> 
-                                                    </div>                                                     
-                                                    <p><a href="#" target="_blank" class="external-link">Футбольный клуб Астана вышла в плей-офф стадию Лиги Европы...</a></p> 
-                                                    <div> 
-                                                        <a href="sport.html" target="_blank"><span class="read-more">Sport</span></a> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                            </div>                                             
-                                            <div class="item"> 
-                                                <div class="item-image-3">
-                                                    <a class="img-link" href="#">
-                                                        <img class="img-responsive img-full" src="img/index_800x400-image11.jpg" alt="">
-                                                    </a>
-                                                    <span><a class="label-9" href="soccer.html"></a>Медицина</span> 
-                                                </div>                                                 
-                                                <div class="item-content"> 
-                                                    <div class="title-left title-style04 underline04"> 
-                                                        <h3><a href="#"><strong></strong> Влияние мобильных телефонов на здоровье</a></h3> 
-                                                    </div>                                                     
-                                                    <p><a href="#" target="_blank" class="external-link">Ученые Казахстана выявили старшные последствия чатстого использования мобильных телефонов перед сном</a></p> 
-                                                    <div> 
-                                                        <a href="lifestyle.html" target="_blank"><span class="read-more">Lifestyle</span></a> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                            </div>                                             
-                                            <div class="item"> 
-                                                <div class="item-image-3">
-                                                    <a class="img-link" href="#">
-                                                        <img class="img-responsive img-full" src="img/index_800x400-image12.jpg" alt="">
-                                                    </a>
-                                                    <span><a class="label-3" href="health.html">Travel</a></span> 
-                                                </div>                                                 
-                                                <div class="item-content"> 
-                                                    <div class="title-left title-style04 underline04"> 
-                                                        <h3><a href="#"><strong>Browns</strong> Canyon</a></h3> 
-                                                    </div>                                                     
-                                                    <p><a href="#" target="_blank" class="external-link">To make a run at a national title, each element has to fall perfectly into place.</a></p> 
-                                                    <div> 
-                                                        <a href="travel.html" target="_blank"><span class="read-more">Travel</span></a> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                            </div>                                             
-                                            <div class="item"> 
-                                                <div class="item-image-3">
-                                                    <a class="img-link" href="#">
-                                                        <img class="img-responsive img-full" src="img/index_800x400-image13.jpg" alt="">
-                                                    </a>
-                                                    <span><a class="label-6" href="health.html">Web Shows</a></span> 
-                                                </div>                                                 
-                                                <div class="item-content"> 
-                                                    <div class="title-left title-style04 underline04"> 
-                                                        <h3><a href="#"><strong>The Web</strong> Shows</a></h3> 
-                                                    </div>                                                     
-                                                    <p><a href="#" target="_blank" class="external-link">Critical acclaim, star power and an increasing number of web-to-TV success stories...</a></p> 
-                                                    <div> 
-                                                        <a href="web-shows.html" target="_blank"><span class="read-more">Web Shows</span></a> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <!-- End .content-->                                                 
-                                            </div>                                             
-                                        </div>                                         
-                                        <!--========== END .NEWS ==========-->                                         
-                                    </div>                                     
-                                    <!--========== END .COL-MD-9 ==========-->                                     
-                                </div>                                 
-                                <!--========== END .ROW ==========-->                                 
-                            </div>                             
-                            <!--========== END .COL-MD-8 ==========-->                             
-                            <!--========== BEGIN COL-MD-4 ==========-->                             
-                            <div class="col-md-4"> 
-                                <!-- Begin .title-style02 -->                                 
-                                <div class="title-style02"> 
-                                    <h3><a href="#">Последние статьи</a></h3> 
-                                </div>                                 
-                                <!-- End .title-style02 -->                                 
-                                <!--========== BEGIN .SIDEBAR-SCROLL ==========-->                                 
-                                <div class="sidebar-scroll"> 
-                                    <!-- Begin .scroll-item -->                                     
-                                    <div class="item"> 
-                                        <div class="item-image-full">
-                                            <a class="img-link" href="#">
-                                                <img class="img-responsive img-full" src="img/index_800x400-image02.jpg" alt="">
-                                            </a>
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="item"> 
-                                        <div class="item-content-1"> 
-                                            <h3>В Кагарагде рабочие 5 шахт объявили забастовку, и уже 3 дня не выходят на поверхность</h3> 
-                                        </div>                                         
-                                    </div>                                     
-                                    <!-- End .scroll-item -->                                     
-                                    <div class="scroll-item"> 
-                                        <div class="item"> 
-                                            <div class="item-image">
-                                                <a class="img-link" href="#">
-                                                    <img class="img-responsive img-full" src="img/index_800x400-image40.jpg" alt="">
-                                                </a>
-                                            </div>                                             
-                                            <div class="item-content"> 
-                                                <p><i class="fa fa-clock-o"></i> <span class="day"> 1 мин назад</span> <br /> 
-                      Новое приложение придумали казахстанские студенты для глухонемых... </p> 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="scroll-item"> 
-                                        <div class="item"> 
-                                            <div class="item-content-1"> 
-                                                <p><i class="fa fa-clock-o"></i> <span class="day"> 2 мин назад</span> <br /> 
-                      Новые законы приняли в Парламенте, теперь на пенсию жещнины выйдут раньше, в 55 лет. </p> 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="scroll-item"> 
-                                        <div class="item"> 
-                                            <div class="item-content-1"> 
-                                                <p><a href="#"> <span class="day"> 3 min ago</span> <br /> 
-                      The M. players ran through a banner which read: “You don’t need to wear red & blue...</a></p> 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="scroll-item"> 
-                                        <div class="item"> 
-                                            <div class="item-image">
-                                                <a class="img-link" href="#">
-                                                    <img class="img-responsive img-full" src="img/index_800x400-image41.jpg" alt="">
-                                                </a>
-                                            </div>                                             
-                                            <div class="item-content"> 
-                                                <p><a href="#"> <span class="day"> 4 min ago</span> <br /> 
-                      The flat brown spots show up on some parts of the skin...</a></p> 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="scroll-item"> 
-                                        <div class="item"> 
-                                            <div class="item-image">
-                                                <a class="img-link" href="#">
-                                                    <img class="img-responsive img-full" src="img/index_800x400-image42.jpg" alt="">
-                                                </a>
-                                            </div>                                             
-                                            <div class="item-content"> 
-                                                <p><a href="#"> <span class="day">5 min ago</span> <br /> 
-                      The natural cycles alone aren’t sufficient to explain...</a></p> 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="scroll-item"> 
-                                        <div class="item"> 
-                                            <div class="item-content-1"> 
-                                                <p><i class="fa fa-clock-o"></i> <span class="day"> 6 min ago</span> <br /> 
-                      L.Counsel is demanding stop its policy of censoring student religious speech. </p> 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="scroll-item"> 
-                                        <div class="item"> 
-                                            <div class="item-content-1"> 
-                                                <p><i class="fa fa-clock-o"></i> <span class="day"> 7 min ago</span> <br /> 
-                      Often broadcast social media sites with popular hashtags but the social media has nothing to do.</p> 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="scroll-item"> 
-                                        <div class="item"> 
-                                            <div class="item-content-1"> 
-                                                <p><i class="fa fa-clock-o"></i> <span class="day">8 min ago</span> <br /> 
-                      The River Seine is at its highest level for more than 30 years. </p> 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="item"> 
-                                        <div class="item-image-full">
-                                            <a class="img-link" href="#">
-                                                <img class="img-responsive img-full" src="img/index_800x400-image04.jpg" alt="">
-                                            </a>
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="scroll-item"> 
-                                        <div class="item"> 
-                                            <div class="item-content-1"> 
-                                                <p><i class="fa fa-clock-o"></i> <span class="day"> 9 min ago</span> <br /> 
-                      Magazines are publications, that are printed or electronically published online magazines. </p> 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="scroll-item"> 
-                                        <div class="item"> 
-                                            <div class="item-content-1"> 
-                                                <p><i class="fa fa-clock-o"></i> <span class="day"> 10 min ago</span> <br /> 
-                      First-time buyers are being warned they could pay more if they sign up for 40-year mortgages </p> 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="scroll-item"> 
-                                        <div class="item"> 
-                                            <div class="item-content-1"> 
-                                                <p><i class="fa fa-clock-o"></i> <span class="day"> 11 min ago</span> <br /> 
-                      New research provides new evidence that natural cycles alone aren’t sufficient to explain the global atmospheric warming. </p> 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <!-- End .scroll-item -->                                     
-                                </div>                                 
-                                <!--========== END .SIDEBAR-SCROLL ==========-->                                 
-                            </div>                             
-                            <!--========== END .COL-MD-4 ==========-->                             
-                        </div>                         
-                    </div>                     
-                </section>            
+                <!--========== END .MODULE ==========-->                 
                 <!--========== BEGIN .MODULE ==========-->                 
-                <section class="module" id="thirdModule"> 
+                <section class="module"> 
                     <div class="container"> 
                         <div class="row no-gutter"> 
                             <!--========== BEGIN .COL-MD-8 ==========-->                             
@@ -1471,23 +1389,16 @@
                                     <!-- <h3 class="title"><span class="bg-1">Local News</span></h3> 
                                     <h3 class="subtitle">Latest News in details</h3> -->
                                <!-- <!--  --> 
-                       <div class="module-title"> 
-                            <h3 class="title"> </h3> 
-                            <h3 class="subtitle">Карта региональных СМИ</h3> 
-                        </div>
+
                               
                                      
                         <!--========== END SMALL-GALLERY ==========-->                         
                         <!-- Begin .bottom-add-place-->                         
-                        <div class="bottom-add-place"> 
-                            <a href="" target="_blank">
-                                <img src="img/banner_1248x100.jpg" alt="">
-                            </a>                             
-                        </div>                         
+                     
                         <!-- End .bottom-add-place -->                         
-                   <!--  </div>    -->                  
+                    </div>                     
                     <!--========== END .CONTAINER ==========-->                     
-                <!-- </section>    -->              
+                </section>                 
                 <!--========== END .MODULE ==========-->                 
             </section>             
             <!--========== END #MAIN-SECTION ==========-->             
@@ -1504,7 +1415,7 @@
                 Но мы всегда будем на стороне закона и никогда не нарушаем.<br> 
                 We know ... easier said than done. </p> 
                                     <div class="site-logo">
-                                        <a href="">
+                                        <a href="index.html">
                                             <img src="img/logo.png" alt="Side Logo" /> 
                                             <h3>Web <span>Press</span></h3> 
                                             <p>Цифровизация печатных СМИ</p> 
@@ -1684,15 +1595,13 @@
             <!--========== END #COPYRIGHTS==========-->             
         </div>         
         <!--========== END #WRAPPER ==========-->         
-        <!-- External JavaScripts -->   
-
+        <!-- External JavaScripts -->         
         <script src="js/jquery-3.1.1.min.js"></script>         
         <script src="js/bootstrap.min.js"></script>         
         <script src="js/jquery-ui.min.js"></script>         
         <script src="js/plugins.js"></script>         
         <!-- JavaScripts -->         
         <script src="js/functions.js"></script>
-        <script src="js/jquery.maphilight.min.js"></script>
         <script src="js/scripts.js"></script>    
     </body>     
 </html>
