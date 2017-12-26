@@ -1,6 +1,9 @@
 var sPositions = localStorage.positions || "{}",
     positions = JSON.parse(sPositions);
 
+$('[data-toggle="tooltip"]').tooltip({ track: true }); 
+$('.map').maphilight();
+
 if (localStorage.getItem('dataColor') == null) {
 	$('#wrapper')[0].dataset.color = 'blue';
 } else {
@@ -172,15 +175,7 @@ function redactor() {
 	$("#secondModule").draggable("option","disabled", false);
 	$("#thirdModule").draggable("option","disabled", false);
 
-
-	
-	
 }
-
-
-
-
-
 
 function changeImgFile(input, width, height, img) {
     if (input.files && input.files[0]) {
@@ -248,4 +243,3 @@ function cancelRedactor() {
 	// document.getElementById("draggable1").setAttribute("style", "cursor: default;");
 	// document.getElementById("draggable2").setAttribute("style", "cursor: default;"); 
 }
-
