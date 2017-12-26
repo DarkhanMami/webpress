@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Press | Почта</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Арман Нургельдинов</strong>
+                             </span> <span class="text-muted text-xs block">Модератор <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">Профиль</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                            <li><a href="mailbox.html">Почта</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Выйти</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        WP
+                    </div>
+                </li>
+                <li>
+                    <a href="dashboard_4_1.html"><i class="fa fa-th-large"></i> <span class="nav-label">Главная</span> <span class="fa arrow"></span></a>
+
+                </li>
+
+                <li class="active">
+                    <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Почта </span><span class="label label-warning pull-right">16/24</span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li class="active"><a href="mailbox.html">Входящие</a></li>
+                        <li><a href="mail_detail.html">Внутри почты</a></li>
+                        <li><a href="mail_compose.html">Написать письмо</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="profile_2.html"><i class="fa fa-desktop"></i> <span class="nav-label">Профиль</span> </a>
+                </li>
+
+                <li>
+                    <a href="agile_board.html"><i class="fa fa-globe"></i> <span class="nav-label">Интерфейс проектов</span></a>
+
+                </li>
+                                <li>
+                    <a href="users.html"><i class="fa fa-user"></i> <span class="nav-label">Пользователи</span></a>
+
+                </li>
+                <li>
+                    <a href="post.html"><i class="fa fa-newspaper-o"></i> <span class="nav-label">Создание статей</span></a>
+
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Поиск..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <span class="m-r-sm text-muted welcome-message">Добро пожаловать в Web Press</span>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a7.jpg">
+                                </a>
+                                <div class="media-body">
+                                    <small class="pull-right">46h ago</small>
+                                    <strong>userB1</strong> прислал Вам письмо <strong>Модератору</strong>. <br>
+                                    <small class="text-muted">3 дня назад, в 7:58 - 10.09.2016</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a4.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right text-navy">5h ago</small>
+                                   <strong>userB2</strong> прислал Вам письмо <strong>Модератору</strong>. <br>
+                                    <small class="text-muted">Вчера 10:21 - 12.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/profile.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right">23h ago</small>
+                                    <strong>userB3</strong> прислал Вам письмо <strong>Модератору</strong>. <br>
+                                    <small class="text-muted">Вчера 12:30 - 12.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html">
+                                    <i class="fa fa-envelope"></i> <strong>Читать все сообщения</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> У Вас 16 сообщений
+                                    <span class="pull-right text-muted small">4 минуты назад</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="profile.html">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 новых юзера
+                                    <span class="pull-right text-muted small">12 минут назад</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="grid_options.html">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Сервер перезапущен
+                                    <span class="pull-right text-muted small">4 минуты назад</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html">
+                                    <strong>Все уведомления</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i> Выйти
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+        </div>
+
+        <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content mailbox-content">
+                        <div class="file-manager">
+                            <a class="btn btn-block btn-primary compose-mail" href="mail_compose.html">Написать письмо</a>
+                            <div class="space-25"></div>
+                            <h5>Папки</h5>
+                            <ul class="folder-list m-b-md" style="padding: 0">
+                                <li><a href="mailbox.html"> <i class="fa fa-inbox "></i> Входящие <span class="label label-warning pull-right">16</span> </a></li>
+                                <li><a href="mailbox.html"> <i class="fa fa-envelope-o"></i> Отправленные</a></li>
+                                <li><a href="mailbox.html"> <i class="fa fa-certificate"></i> Важное</a></li>
+                                <li><a href="mailbox.html"> <i class="fa fa-file-text-o"></i> Черновики <span class="label label-danger pull-right">2</span></a></li>
+                                <li><a href="mailbox.html"> <i class="fa fa-trash-o"></i> Корзина</a></li>
+                            </ul>
+                            <h5>Категории</h5>
+                            <ul class="category-list" style="padding: 0">
+                                <li><a href="#"> <i class="fa fa-circle text-navy"></i> Политика </a></li>
+                                <li><a href="#"> <i class="fa fa-circle text-danger"></i> Бизнес</a></li>
+                                <li><a href="#"> <i class="fa fa-circle text-primary"></i> Наука</a></li>
+                                <li><a href="#"> <i class="fa fa-circle text-info"></i> Спорт</a></li>
+                                <li><a href="#"> <i class="fa fa-circle text-warning"></i> Финансы</a></li>
+                            </ul>
+
+                            <h5 class="tag-title">Теги</h5>
+                            <ul class="tag-list" style="padding: 0">
+                                <li><a href=""><i class="fa fa-tag"></i> Семья</a></li>
+                                <li><a href=""><i class="fa fa-tag"></i> Бизнес</a></li>
+                                <li><a href=""><i class="fa fa-tag"></i> Футбол</a></li>
+                                <li><a href=""><i class="fa fa-tag"></i> Дети</a></li>
+                                <li><a href=""><i class="fa fa-tag"></i> Финансы</a></li>
+                                <li><a href=""><i class="fa fa-tag"></i> Музыка</a></li>
+                                <li><a href=""><i class="fa fa-tag"></i> Политика</a></li>
+                                <li><a href=""><i class="fa fa-tag"></i> Фильмы</a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 animated fadeInRight">
+            <div class="mail-box-header">
+
+                <form method="get" action="index.html" class="pull-right mail-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-sm" name="search" placeholder="Поиск сообщений">
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-sm btn-primary">
+                                Поиск
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <h2>
+                    Входящие (16)
+                </h2>
+                <div class="mail-tools tooltip-demo m-t-md">
+                    <div class="btn-group pull-right">
+                        <button class="btn btn-white btn-sm"><i class="fa fa-arrow-left"></i></button>
+                        <button class="btn btn-white btn-sm"><i class="fa fa-arrow-right"></i></button>
+
+                    </div>
+                    <button class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="left" title="Обновить"><i class="fa fa-refresh"></i> Обновить</button>
+                    <button class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Отметить как прочитанное"><i class="fa fa-eye"></i> </button>
+                    <button class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Отметить как важное"><i class="fa fa-exclamation"></i> </button>
+                    <button class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="В корзину"><i class="fa fa-trash-o"></i> </button>
+
+                </div>
+            </div>
+                <div class="mail-box">
+
+                <table class="table table-hover table-mail">
+                <tbody>
+                <tr class="unread">
+                    <td class="check-mail">
+                        <input type="checkbox" class="i-checks">
+                    </td>
+                    <td class="mail-ontact"><a href="mail_detail.html">Пользователь Б1</a></td>
+                    <td class="mail-subject"><a href="mail_detail.html">Статья на редактуру</a></td>
+                    <td class=""><i class="fa fa-paperclip"></i></td>
+                    <td class="text-right mail-date">10:10</td>
+                </tr>
+                <tr class="unread">
+                    <td class="check-mail">
+                        <input type="checkbox" class="i-checks" checked>
+                    </td>
+                    <td class="mail-ontact"><a href="mail_detail.html">Пользователь Ф2</a></td>
+                    <td class="mail-subject"><a href="mail_detail.html">Опубликованная статья на сайте nur.kz</a></td>
+                    <td class=""></td>
+                    <td class="text-right mail-date">9:22</td>
+                </tr>
+                <tr class="read">
+                    <td class="check-mail">
+                        <input type="checkbox" class="i-checks">
+                    </td>
+                    <td class="mail-ontact"><a href="mail_detail.html">Пользователь П1</a> <span class="label label-warning pull-right">Финансы</span> </td>
+                    <td class="mail-subject"><a href="mail_detail.html">Предварительная статья на тему политической обстановки в стране</a></td>
+                    <td class=""></td>
+                    <td class="text-right mail-date">16 сентября</td>
+                </tr>
+                <tr class="read">
+                    <td class="check-mail">
+                        <input type="checkbox" class="i-checks">
+                    </td>
+                    <td class="mail-ontact"><a href="mail_detail.html">Пользователь Б4</a></td>
+                    <td class="mail-subject"><a href="mail_detail.html">Финальная версия статьи о новом векторе в бизнесе</a></td>
+                    <td class=""></td>
+                    <td class="text-right mail-date">22 августа</td>
+                </tr>
+                <tr class="read">
+                    <td class="check-mail">
+                        <input type="checkbox" class="i-checks">
+                    </td>
+                    <td class="mail-ontact"><a href="mail_detail.html">Пользователь Ф3</a> <span class="label label-danger pull-right">Бизнес</span></td>
+                    <td class="mail-subject"><a href="mail_detail.html">Статья на редактуру</a></td>
+                    <td class=""><i class="fa fa-paperclip"></i></td>
+                    <td class="text-right mail-date">17 августа</td>
+                </tr>
+ 
+                </tbody>
+                </table>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            <div class="pull-right">
+                Admin Panel <strong>WebPress</strong> Цифровизация печатных СМИ
+            </div>
+            <div>
+                <strong>Copyright</strong> KazKontent &copy; 2017
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+</body>
+
+</html>

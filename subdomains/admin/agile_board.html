@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WebPress | Интерфейс проектов</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Арман Нургельдинов</strong>
+                             </span> <span class="text-muted text-xs block">Модератор <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">Профиль</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                            <li><a href="mailbox.html">Почта</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Выйти</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        СК
+                    </div>
+                </li>
+                <li>
+                    <a href="dashboard_4_1.html"><i class="fa fa-th-large"></i> <span class="nav-label">Главная</span> <span class="fa arrow"></span></a>
+
+                </li>
+
+                <li>
+                    <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Почта </span><span class="label label-warning pull-right">16/24</span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="mailbox.html">Входящие</a></li>
+                        <li><a href="mail_detail.html">Внутри почты</a></li>
+                        <li><a href="mail_compose.html">Написать письмо</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="profile_2.html"><i class="fa fa-desktop"></i> <span class="nav-label">Профиль</span> </a>
+                </li>
+
+                <li class="active">
+                    <a href="agile_board.html"><i class="fa fa-globe"></i> <span class="nav-label">Интерфейс проектов</span></a>
+
+                </li>
+                                <li>
+                    <a href="users.html"><i class="fa fa-user"></i> <span class="nav-label">Пользователи</span></a>
+
+                </li>
+                <li>
+                    <a href="post.html"><i class="fa fa-newspaper-o"></i> <span class="nav-label">Создание статей</span></a>
+
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Поиск..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <span class="m-r-sm text-muted welcome-message">Добро пожаловать в СобКор</span>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a7.jpg">
+                                </a>
+                                <div class="media-body">
+                                    <small class="pull-right">46h ago</small>
+                                    <strong>userB1</strong> прислал Вам письмо <strong>Модератору</strong>. <br>
+                                    <small class="text-muted">3 дня назад, в 7:58 - 10.09.2016</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a4.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right text-navy">5h ago</small>
+                                   <strong>userB2</strong> прислал Вам письмо <strong>Модератору</strong>. <br>
+                                    <small class="text-muted">Вчера 10:21 - 12.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/profile.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right">23h ago</small>
+                                    <strong>userB3</strong> прислал Вам письмо <strong>Модератору</strong>. <br>
+                                    <small class="text-muted">Вчера 12:30 - 12.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html">
+                                    <i class="fa fa-envelope"></i> <strong>Читать все сообщения</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> У Вас 16 сообщений
+                                    <span class="pull-right text-muted small">4 минуты назад</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="profile.html">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 новых юзера
+                                    <span class="pull-right text-muted small">12 минут назад</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="grid_options.html">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Сервер перезапущен
+                                    <span class="pull-right text-muted small">4 минуты назад</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html">
+                                    <strong>Все уведомления</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i> Выйти
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+        </div>
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>Интерфейс проектов</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="active">
+                            <strong>Интерфейс проектов</strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+            </div>
+
+        <div class="wrapper wrapper-content  animated fadeInRight">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h3>Новые статьи</h3>
+                            <p class="small"><i class="fa fa-hand-o-up"></i> Переносите между колонками</p>
+
+                            <ul class="sortable-list connectList agile-list" id="todo">
+                                <li class="warning-element" id="task1">
+                                    Название статьи и автора
+                                    <div class="agile-detail">
+                                        <a href="#" class="pull-right btn btn-xs btn-white">Бизнес</a>
+                                        <i class="fa fa-clock-o"></i> 12.10.2016
+                                    </div>
+                                </li>
+                                <li class="success-element" id="task2">
+                                   Название статьи и автора
+                                    <div class="agile-detail">
+                                        <a href="#" class="pull-right btn btn-xs btn-white">Финансы</a>
+                                        <i class="fa fa-clock-o"></i> 05.09.2016
+                                    </div>
+                                </li>
+                                <li class="info-element" id="task3">
+                                    Название статьи и автора
+                                    <div class="agile-detail">
+                                        <a href="#" class="pull-right btn btn-xs btn-white">Политика</a>
+                                        <i class="fa fa-clock-o"></i> 16.10.2016
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h3>Статьи на редакции</h3>
+                            <p class="small"><i class="fa fa-hand-o-up"></i> Переносите между колонками</p>
+                            <ul class="sortable-list connectList agile-list" id="inprogress">
+                                <li class="success-element" id="task9">
+                                    Статьи проходящие редакцию. Название статьи и автор.
+                                    <div class="agile-detail">
+                                        <a href="#" class="pull-right btn btn-xs btn-white">Финансы</a>
+                                        <i class="fa fa-clock-o"></i> 12.10.2016
+                                    </div>
+                                </li>
+                                <li class="success-element" id="task10">
+                                    Статьи проходящие редакцию. Название статьи и автор.
+                                    <div class="agile-detail">
+                                        <a href="#" class="pull-right btn btn-xs btn-white">Финансы</a>
+                                        <i class="fa fa-clock-o"></i> 05.09.2016
+                                    </div>
+                                </li>
+                                <li class="warning-element" id="task11">
+                                   Статьи проходящие редакцию. Название статьи и автор.
+									<div>
+                                        <a href="#" class="pull-right btn btn-xs btn-white">Политика</a>
+                                        <i class="fa fa-clock-o"></i> 16.10.2016
+                                    </div>
+                                </li>
+                                <li class="warning-element" id="task12">
+                                   Статьи проходящие редакцию. Название статьи и автор.
+                                    <div class="agile-detail">
+                                        <a href="#" class="pull-right btn btn-xs btn-white">Бизнес</a>
+                                        <i class="fa fa-clock-o"></i> 09.09.2016
+                                    </div>
+                                </li>
+                                <li class="info-element" id="task13">
+                                   Статьи проходящие редакцию. Название статьи и автор.
+                                    <div class="agile-detail">
+                                        <a href="#" class="pull-right btn btn-xs btn-primary">Бизнес</a>
+                                        <i class="fa fa-clock-o"></i> 08.09.2016
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h3>Опубликованные</h3>
+                            <p class="small"><i class="fa fa-hand-o-up"></i> Переносите между колонкамиt</p>
+                            <ul class="sortable-list connectList agile-list" id="completed">
+                                <li class="info-element" id="task16">
+                                    Опубликованные статьи с ресурсом где они были выложены. Название и автор.
+                                    <div class="agile-detail">
+                                        <a href="#" class="pull-right btn btn-xs btn-white">Политика</a>
+                                        <i class="fa fa-clock-o"></i> 16.10.2016
+                                    </div>
+                                </li>
+                                <li class="warning-element" id="task17">
+                                    Опубликованные статьи с ресурсом где они были выложены. Название и автор.
+                                    <div class="agile-detail">
+                                        <a href="#" class="pull-right btn btn-xs btn-white">Бизнес</a>
+                                        <i class="fa fa-clock-o"></i> 09.09.2016
+                                    </div>
+                                </li>
+                                <li class="warning-element" id="task18">
+                                    Опубликованные статьи с ресурсом где они были выложены. Название и автор.
+                                    <div class="agile-detail">
+                                        <a href="#" class="pull-right btn btn-xs btn-white">Бизнес</a>
+                                        <i class="fa fa-clock-o"></i> 09.10.2016
+                                    </div>
+                                </li>
+                                <li class="warning-element" id="task19">
+                                    Опубликованные статьи с ресурсом где они были выложены. Название и автор.
+                                    <div class="agile-detail">
+                                        <a href="#" class="pull-right btn btn-xs btn-primary">Бизнес</a>
+                                        <i class="fa fa-clock-o"></i> 08.08.2016
+                                    </div>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+        <div class="footer">
+                <div class="pull-right">
+                Admin Panel <strong>WebPress</strong> Цифровизация печатных СМИ
+            </div>
+            <div>
+                <strong>Copyright</strong> KazKontent &copy; 2017
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/jquery-ui-1.10.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $("#todo, #inprogress, #completed").sortable({
+                connectWith: ".connectList",
+                update: function( event, ui ) {
+
+                    var todo = $( "#todo" ).sortable( "toArray" );
+                    var inprogress = $( "#inprogress" ).sortable( "toArray" );
+                    var completed = $( "#completed" ).sortable( "toArray" );
+                    $('.output').html("ToDo: " + window.JSON.stringify(todo) + "<br/>" + "In Progress: " + window.JSON.stringify(inprogress) + "<br/>" + "Completed: " + window.JSON.stringify(completed));
+                }
+            }).disableSelection();
+
+        });
+    </script>
+
+</body>
+
+</html>
